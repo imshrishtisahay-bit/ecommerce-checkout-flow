@@ -2,16 +2,16 @@
   "color": {
     "surface": {
       "primary": {
-        "value": "#d7dobe"
+        "value": "#C1AA90"
       },
       "secondary": {
-        "value": "#a8825c"
+        "value": "#695441"
       },
       "tertiary": {
-        "value": "#78353b"
+        "value": "#3A3126"
       },
       "quaternary": {
-        "value": "#o40000"
+        "value": "#1D1915"
       }
     }
   }
