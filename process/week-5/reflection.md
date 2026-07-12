@@ -63,3 +63,11 @@ Tracking all the design iterations, component fixes, and UX improvements made wh
 * Add an order number along with an **"In Transit"** button styled with a gradient to highlight it.
 * Display the carrier name (e.g., **Carrier: FedEx**), so the user doesn't get confused.
 * Provide detailed tracking history and add a map in **dark mode** to match the overall color vibe.
+
+
+## Accessibility & UI Design Notes
+
+* **Contrast Ratio:** Check the text/background pair to ensure it is recorded with a measured contrast ratio of > 4.5:1.
+* **UI Hierarchy & Meaning:** Give a clear sense of purpose to every UI page.
+* **Tab Order Annotations:** Create an intended tab-order annotation document for the payments and declined card screens, keeping keyboard navigation and focus management in mind.
+* **Interaction Documentation:** Detail how it works, understand why this is important, and outline exactly how the user interacts with it.
