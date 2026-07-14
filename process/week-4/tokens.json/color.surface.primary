@@ -1,0 +1,45 @@
+{
+  "color": {
+    "surface": {
+      "primary": {
+        "value": "#091E48"
+      },
+      "secondary": {
+        "value": "#185277"
+      },
+      "tertiary": {
+        "value": "#56C8C8"
+      },
+      "quaternary": {
+        "value": "#FFFAFA"
+      }
+    }
+  }
+}
+{
+  "color": {
+    "text": {
+      "primary": {
+        "value": "#FFFAFA"
+      },
+      "secondary": {
+        "value": "#185277"
+      },
+      "tertiary": {
+        "value": "#091E48"
+      }
+    }
+  }
+}
+{
+  "color": {
+    "error": {
+      "primary": {
+        "value": "#FF3333"
+      },
+      "secondary": {
+        "value": "#FFFFFF"
+      }
+    }
+  }
+}
