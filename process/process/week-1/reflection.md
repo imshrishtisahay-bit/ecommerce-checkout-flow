@@ -1,4 +1,0 @@
-## Week 1: Teardowns
-
-Through this project I got to learn about ui design of different sites, how every component, space, text etc. matter for any site. I got stuck while learning about heuristics guidelines, but Once my doubts were cleared, I gained a much clearer understanding of heuristic principles and their practical use in UI/UX design.
-It help to improve visual hierarchy, information placement and task flow. Examine an components such as navigation menus, search bars, filters, buttons, forms, product cards, carts, and checkout screens to identify usability issues, it’s give a sense to any ui design site how actually design work and every design has its meaning  its not place it randomly. If I were to redo it, I would approach it more concisely and with a better understanding of heuristic principles.
