@@ -12,34 +12,33 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout source repo
+      - name: Checkout source repository
         uses: actions/checkout@v4
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.140.1'
+          hugo-version: "0.140.1"
           extended: true
 
       - name: Build site
         working-directory: process/week-8/capstone
-        run: hugo --gc --minify --baseURL https://imshrishtisahay-bit.github.io/shrishti22.github.io/
+        run: |
+          hugo --gc --minify \
+            --baseURL "https://imshrishtisahay-bit.github.io/shrishti22.github.io/"
 
       - name: Create .nojekyll
         run: touch process/week-8/capstone/public/.nojekyll
 
-      - name: Deploy built site to Pages repo
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git clone https://$GH_PAT@github.com/imshrishtisahay-bit/shrishti22.github.io.git target-repo
-          cd target-repo
-          git checkout gh-pages || git checkout --orphan gh-pages
-          rsync -av --delete ../process/week-8/capstone/public/ ./
-          touch .nojekyll
-          git add -A
-          git commit -m "Deploy Hugo site from ecommerce-checkout-flow" || true
-          git push https://$GH_PAT@github.com/imshrishtisahay-bit/shrishti22.github.io.git gh-pages
+      - name: Deploy to target Pages repository
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GH_PAT }}
+          external_repository: imshrishtisahay-bit/shrishti22.github.io
+          publish_branch: main
+          publish_dir: process/week-8/capstone/public
+          keep_files: false
+          user_name: GitHub Actions
+          user_email: actions@github.com
