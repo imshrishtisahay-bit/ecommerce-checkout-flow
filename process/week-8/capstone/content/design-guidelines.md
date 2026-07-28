@@ -5,6 +5,42 @@ description: "A small guide to the visual choices behind this portfolio."
 
 # Design guidelines
 
+This page summarizes the visual direction behind the portfolio, including typography, color, spacing, and interaction patterns.
+
+## Design Principles
+
+- Simplicity
+- Accessibility
+- Consistency
+- Usability
+
+## Process
+
+- Research
+- User Flow
+- Wireframes
+- Design System
+- High-Fidelity UI
+- Prototype
+- Testing
+- Iterations
+
+## UX Standards
+
+- WCAG AA
+- Mobile First
+- Responsive Design
+- Semantic HTML
+- Performance
+
+## Best Practices
+
+- Color Contrast
+- Typography
+- Spacing
+- Component Reuse
+- Visual Hierarchy
+
 ## Typography
 
 - Use clear, readable sans-serif type for body content

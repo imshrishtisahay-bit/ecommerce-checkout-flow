@@ -1,9 +1,11 @@
 <header class="site-header">
   <div class="container nav">
-    <a href="/" class="brand">Shrishti</a>
+    <a href="{{ "/" | relURL }}" class="brand">Shrishti</a>
     <nav>
-      <a href="/">Home</a>
-      <a href="/design-guidelines/">Guidelines</a>
+      <a href="{{ "/" | relURL }}">Home</a>
+      <a href="{{ "/case-study/" | relURL }}">Case Study</a>
+      <a href="{{ "/design-guidelines/" | relURL }}">Guidelines</a>
+      <a href="{{ "/design-system/" | relURL }}">Design System</a>
     </nav>
   </div>
 </header>
