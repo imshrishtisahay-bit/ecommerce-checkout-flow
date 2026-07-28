@@ -1,3 +1,82 @@
-baseURL = 'https://imshrishtisahay-bit.github.io/shrishti22.github.io/'
+baseURL = '/'
+relativeURLs = true
+canonifyURLs = false
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[markup.goldmark.renderer]
+unsafe = true
+
 languageCode = 'en-us'
 title = 'UI/UX Portfolio'
+
+# ============================================================================
+# Module Mounts — surface the /process docs as site content (single source of truth)
+# ============================================================================
+# The weekly documentation already lives in /process/week-N/ at the repo root.
+# Instead of copying it into content/, these mounts tell Hugo to read those files
+# in place and publish them under /process/ on the site.
+#
+# IMPORTANT — why two patterns:
+#
+# 1. Weeks 0–7 are mounted as DIRECTORIES:
+#      source = "../../week-1"  ->  target = "content/process/week-1"
+#    Every file in the folder (reflection.md, PDFs, PNGs) is discovered. The .md
+#    files become pages; the binaries are ignored unless referenced.
+#
+# 2. Week 8 is mounted as a SINGLE FILE:
+#      source = "../../week-8/reflection.md"  ->  target = ".../reflection.md"
+#    The site itself lives in process/week-8/capstone/, so mounting the whole
+#    week-8/ directory would pull the site into itself (infinite recursion). The
+#    single-file mount grabs just the reflection and avoids the loop entirely.
+#
+# NOTE: once any [[module.mounts]] entry exists, Hugo STOPS auto-mounting the
+# default project folders (content, static, layouts, assets, data). We must
+# re-declare them explicitly below — otherwise the rest of the site disappears.
+# ============================================================================
+
+[[module.mounts]]
+  source = "content"
+  target = "content"
+[[module.mounts]]
+  source = "static"
+  target = "static"
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+[[module.mounts]]
+  source = "data"
+  target = "data"
+
+# --- /process weekly mounts (weeks 0–7 as directories) ---
+[[module.mounts]]
+  source = "../../week-0"
+  target = "content/process/week-0"
+[[module.mounts]]
+  source = "../../week-1"
+  target = "content/process/week-1"
+[[module.mounts]]
+  source = "../../week-2"
+  target = "content/process/week-2"
+[[module.mounts]]
+  source = "../../week-3"
+  target = "content/process/week-3"
+[[module.mounts]]
+  source = "../../week-4"
+  target = "content/process/week-4"
+[[module.mounts]]
+  source = "../../week-5"
+  target = "content/process/week-5"
+[[module.mounts]]
+  source = "../../week-6"
+  target = "content/process/week-6"
+[[module.mounts]]
+  source = "../../week-7"
+  target = "content/process/week-7"
+
+# --- /process week 8 (single file — avoids capstone recursion) ---
+[[module.mounts]]
+  source = "../../week-8/reflection.md"
+  target = "content/process/week-8/reflection.md"
