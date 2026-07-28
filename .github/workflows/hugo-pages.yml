@@ -24,7 +24,7 @@ jobs:
 
       - name: Build site
         working-directory: process/week-8/capstone
-        run: hugo --gc --minify
+        run: hugo --gc --minify --baseURL https://imshrishtisahay-bit.github.io/shrishti22.github.io/
 
       - name: Create .nojekyll
         run: touch process/week-8/capstone/public/.nojekyll
