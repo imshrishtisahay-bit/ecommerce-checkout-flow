@@ -26,8 +26,7 @@ jobs:
       - name: Build site
         working-directory: process/week-8/capstone
         run: |
-          hugo --gc --minify \
-            --baseURL "https://imshrishtisahay-bit.github.io/shrishti22.github.io/"
+          hugo --gc --minify --baseURL "https://imshrishtisahay-bit.github.io/shrishti22.github.io/"
 
       - name: Create .nojekyll
         run: touch process/week-8/capstone/public/.nojekyll
@@ -35,10 +34,10 @@ jobs:
       - name: Deploy to target Pages repository
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          personal_token: ${{ secrets.GH_PAT }}
           external_repository: imshrishtisahay-bit/shrishti22.github.io
           publish_branch: main
           publish_dir: process/week-8/capstone/public
-          keep_files: false
           user_name: GitHub Actions
           user_email: actions@github.com
+          force_orphan: true
