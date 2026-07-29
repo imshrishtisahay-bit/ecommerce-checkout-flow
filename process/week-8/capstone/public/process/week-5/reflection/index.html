@@ -1,4 +1,122 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>| </title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel=stylesheet><link rel=stylesheet href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/ecommerce-checkout-flow/css/site.min.b17521213b3185ca6c795bfe7799595644bbba67638ad831c507f3dc89b440c9.css></head><body><header class=site-header><div class="container nav"><a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/ class=brand>Shrishti</a><nav><a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/>Home</a>
-<a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/case-study/>Case Study</a>
-<a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-guidelines/>Guidelines</a>
-<a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-system/>Design System</a></nav></div></header><main><article class=page><div class=container><h2 id=screen-changes>Screen Changes</h2><p>Tracking all the design iterations, component fixes, and UX improvements made while building out these screens.</p><hr><h2 id=screen-changes-cart-in-collapsed-state>Screen Changes: Cart in Collapsed State</h2><ul><li><p><strong>Progress Stepper:</strong> Fix the alignment and color of the <code>{ProgressStepper}</code> component.</p></li><li><p><strong>Card:</strong> Reduce the delete icon size from <strong>15px to 13px</strong>.</p></li><li><p><strong>Save for Later:</strong> Change the text style from highlighted to dim by setting the opacity to <strong>70%</strong>. Also, reduce the typography size from <strong>16px to 14px</strong>.</p></li><li><p><strong>Button Spacing:</strong> Reduce the spacing between buttons.</p></li><li><p><strong>Coupons:</strong></p></li><li><p>Change the color fill and outer stroke of the <strong>Applied</strong> button from 100% cyan to a gradient to highlight that the coupon has been applied.</p></li><li><p>Reduce the <strong>Remove</strong> button typography size from <strong>16px to 11px</strong>.</p></li><li><p><strong>Proceed Button:</strong> Increase the size of the <strong>Proceed</strong> button from small to big, and add a message showing the remaining/consisting steps.</p></li><li><p><strong>Navigation Bar:</strong> Reduce the number of icons from 5 to 4 by removing the <strong>Wishlist</strong> icon. The active icons should now be: <code>{Home, Search, Cart, Profile}</code>.</p></li><li><p><strong>Color Consistency:</strong> Use a consistent color scheme to reduce friction and eye strain for the user, as the previous design caused eye strain due to having too many colors.</p></li><li><p><strong>Color Purpose:</strong> Define a clear purpose for each color used; remember its naming convention.</p></li></ul><hr><h2 id=cart-out-of-stock>Cart: Out of Stock</h2><ul><li>Reduce the opacity of the &ldquo;Out of Stock&rdquo; bar.</li><li>Change the color of the warning triangle icon ($\triangle$) from red to yellow.</li><li>Change the copy from <code>{incomplete order...}</code> to <code>{Out of stock description: "This item is currently no longer available"}</code>.</li><li><strong>For the card containing the item that is unavailable:</strong></li><li>It should be highlighted in the same color used for &ldquo;Out of Stock&rdquo;.</li><li>Remove the quantity selector (<code>no. of qty</code>) and replace it with a <strong>&ldquo;Notify me&rdquo;</strong> button.</li><li>Remove the &ldquo;Low inventory / recently sold out&rdquo; text and replace it with <strong>&ldquo;See similar products&rdquo;</strong>.</li><li>Change the action button to an <strong>&ldquo;Add&rdquo;</strong> button.</li><li>Add a <strong>&ldquo;See similar products&rdquo;</strong> link/button.</li><li>Clearly mark it as <strong>&ldquo;Out of Stock&rdquo;</strong>.</li></ul><hr><h2 id=payment-method>Payment Method</h2><ul><li>Add a recommendation message: <code>{In your previous order, you used another payment option: COD}</code>.</li><li>Separate the section so it doesn&rsquo;t look joined together.</li><li>Reduce the opacity of the bar.</li></ul><hr><h2 id=order-placed-success>Order Placed Success</h2><ul><li>Add a gradient to the page for a pop-up message to highlight the success.</li><li>Add a small description message: <code>"Thank you for your purchase"</code>.</li></ul><hr><h2 id=track-order>Track Order</h2><ul><li>Add an order number along with an <strong>&ldquo;In Transit&rdquo;</strong> button styled with a gradient to highlight it.</li><li>Display the carrier name (e.g., <strong>Carrier: FedEx</strong>), so the user doesn&rsquo;t get confused.</li><li>Provide detailed tracking history and add a map in <strong>dark mode</strong> to match the overall color vibe.</li></ul><h2 id=accessibility--ui-design-notes>Accessibility & UI Design Notes</h2><ul><li><strong>Contrast Ratio:</strong> Check the text/background pair to ensure it is recorded with a measured contrast ratio of > 4.5:1.</li><li><strong>UI Hierarchy & Meaning:</strong> Give a clear sense of purpose to every UI page.</li><li><strong>Tab Order Annotations:</strong> Create an intended tab-order annotation document for the payments and declined card screens, keeping keyboard navigation and focus management in mind.</li><li><strong>Interaction Documentation:</strong> Detail how it works, understand why this is important, and outline exactly how the user interacts with it.</li></ul></div></article></main><footer class=site-footer><div class=container><p>© 2026 Shrishti</p></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/ecommerce-checkout-flow/livereload.js?mindelay=10&amp;v=2&amp;port=61580&amp;path=ecommerce-checkout-flow/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> | </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="http://localhost:61580/ecommerce-checkout-flow/ecommerce-checkout-flow/css/site.min.b17521213b3185ca6c795bfe7799595644bbba67638ad831c507f3dc89b440c9.css">
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="container nav">
+    <a href="http://localhost:61580/ecommerce-checkout-flow/" class="brand">Shrishti</a>
+    <nav>
+      <a href="http://localhost:61580/ecommerce-checkout-flow/">Home</a>
+      <a href="http://localhost:61580/ecommerce-checkout-flow/case-study/">Case Study</a>
+      <a href="http://localhost:61580/ecommerce-checkout-flow/design-guidelines/">Guidelines</a>
+      <a href="http://localhost:61580/ecommerce-checkout-flow/design-system/">Design System</a>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      
+  <article class="page">
+    <div class="container">
+      <h2 id="screen-changes">Screen Changes</h2>
+<p>Tracking all the design iterations, component fixes, and UX improvements made while building out these screens.</p>
+<hr>
+<h2 id="screen-changes-cart-in-collapsed-state">Screen Changes: Cart in Collapsed State</h2>
+<ul>
+<li>
+<p><strong>Progress Stepper:</strong> Fix the alignment and color of the <code>{ProgressStepper}</code> component.</p>
+</li>
+<li>
+<p><strong>Card:</strong> Reduce the delete icon size from <strong>15px to 13px</strong>.</p>
+</li>
+<li>
+<p><strong>Save for Later:</strong> Change the text style from highlighted to dim by setting the opacity to <strong>70%</strong>. Also, reduce the typography size from <strong>16px to 14px</strong>.</p>
+</li>
+<li>
+<p><strong>Button Spacing:</strong> Reduce the spacing between buttons.</p>
+</li>
+<li>
+<p><strong>Coupons:</strong></p>
+</li>
+<li>
+<p>Change the color fill and outer stroke of the <strong>Applied</strong> button from 100% cyan to a gradient to highlight that the coupon has been applied.</p>
+</li>
+<li>
+<p>Reduce the <strong>Remove</strong> button typography size from <strong>16px to 11px</strong>.</p>
+</li>
+<li>
+<p><strong>Proceed Button:</strong> Increase the size of the <strong>Proceed</strong> button from small to big, and add a message showing the remaining/consisting steps.</p>
+</li>
+<li>
+<p><strong>Navigation Bar:</strong> Reduce the number of icons from 5 to 4 by removing the <strong>Wishlist</strong> icon. The active icons should now be: <code>{Home, Search, Cart, Profile}</code>.</p>
+</li>
+<li>
+<p><strong>Color Consistency:</strong> Use a consistent color scheme to reduce friction and eye strain for the user, as the previous design caused eye strain due to having too many colors.</p>
+</li>
+<li>
+<p><strong>Color Purpose:</strong> Define a clear purpose for each color used; remember its naming convention.</p>
+</li>
+</ul>
+<hr>
+<h2 id="cart-out-of-stock">Cart: Out of Stock</h2>
+<ul>
+<li>Reduce the opacity of the &ldquo;Out of Stock&rdquo; bar.</li>
+<li>Change the color of the warning triangle icon ($\triangle$) from red to yellow.</li>
+<li>Change the copy from <code>{incomplete order...}</code> to <code>{Out of stock description: &quot;This item is currently no longer available&quot;}</code>.</li>
+<li><strong>For the card containing the item that is unavailable:</strong></li>
+<li>It should be highlighted in the same color used for &ldquo;Out of Stock&rdquo;.</li>
+<li>Remove the quantity selector (<code>no. of qty</code>) and replace it with a <strong>&ldquo;Notify me&rdquo;</strong> button.</li>
+<li>Remove the &ldquo;Low inventory / recently sold out&rdquo; text and replace it with <strong>&ldquo;See similar products&rdquo;</strong>.</li>
+<li>Change the action button to an <strong>&ldquo;Add&rdquo;</strong> button.</li>
+<li>Add a <strong>&ldquo;See similar products&rdquo;</strong> link/button.</li>
+<li>Clearly mark it as <strong>&ldquo;Out of Stock&rdquo;</strong>.</li>
+</ul>
+<hr>
+<h2 id="payment-method">Payment Method</h2>
+<ul>
+<li>Add a recommendation message: <code>{In your previous order, you used another payment option: COD}</code>.</li>
+<li>Separate the section so it doesn&rsquo;t look joined together.</li>
+<li>Reduce the opacity of the bar.</li>
+</ul>
+<hr>
+<h2 id="order-placed-success">Order Placed Success</h2>
+<ul>
+<li>Add a gradient to the page for a pop-up message to highlight the success.</li>
+<li>Add a small description message: <code>&quot;Thank you for your purchase&quot;</code>.</li>
+</ul>
+<hr>
+<h2 id="track-order">Track Order</h2>
+<ul>
+<li>Add an order number along with an <strong>&ldquo;In Transit&rdquo;</strong> button styled with a gradient to highlight it.</li>
+<li>Display the carrier name (e.g., <strong>Carrier: FedEx</strong>), so the user doesn&rsquo;t get confused.</li>
+<li>Provide detailed tracking history and add a map in <strong>dark mode</strong> to match the overall color vibe.</li>
+</ul>
+<h2 id="accessibility--ui-design-notes">Accessibility &amp; UI Design Notes</h2>
+<ul>
+<li><strong>Contrast Ratio:</strong> Check the text/background pair to ensure it is recorded with a measured contrast ratio of &gt; 4.5:1.</li>
+<li><strong>UI Hierarchy &amp; Meaning:</strong> Give a clear sense of purpose to every UI page.</li>
+<li><strong>Tab Order Annotations:</strong> Create an intended tab-order annotation document for the payments and declined card screens, keeping keyboard navigation and focus management in mind.</li>
+<li><strong>Interaction Documentation:</strong> Detail how it works, understand why this is important, and outline exactly how the user interacts with it.</li>
+</ul>
+
+    </div>
+  </article>
+
+    </main>
+    <footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Shrishti</p>
+  </div>
+</footer>
+
+  </body>
+</html>
