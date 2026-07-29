@@ -1,8 +1,6 @@
-baseURL = '/'
-relativeURLs = true
-canonifyURLs = false
-ignoreLogs = ['warning-goldmark-raw-html']
-
+baseURL = "https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/"
+relativeURLs = false
+canonifyURLs = true
 [markup.goldmark.renderer]
 unsafe = true
 
