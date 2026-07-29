@@ -1,95 +1,382 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Processes on </title>
-    <link>http://localhost:1313/ecommerce-checkout-flow/process/</link>
-    <description>Recent content in Processes on </description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/ecommerce-checkout-flow/process/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-0/glossary/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-0/glossary/</guid>
-      <description>&lt;h1 id=&#34;design-glossary&#34;&gt;Design Glossary&lt;/h1&gt;&#xA;&lt;h3 id=&#34;design-system&#34;&gt;Design System&lt;/h3&gt;&#xA;&lt;p&gt;A design system is a collection of reusable components, guidelines, and principles that help create consistent digital products.&lt;/p&gt;&#xA;&lt;h3 id=&#34;design-token&#34;&gt;Design Token&lt;/h3&gt;&#xA;&lt;p&gt;A design token is a small, reusable value such as a color, spacing, typography, or radius variable used to maintain design consistency.&lt;/p&gt;&#xA;&lt;h3 id=&#34;wireframe&#34;&gt;Wireframe&lt;/h3&gt;&#xA;&lt;p&gt;A wireframe is a basic visual layout of a product that shows structure, content placement, and user flow without detailed styling.&lt;/p&gt;&#xA;&lt;h3 id=&#34;hi-fi&#34;&gt;Hi-Fi&lt;/h3&gt;&#xA;&lt;p&gt;A hi-fi (high-fidelity) design is a detailed visual representation of a final product including colors, typography, images, and interactions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-1/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-1/reflection/</guid>
-      <description>&lt;h2 id=&#34;week-1-teardowns&#34;&gt;Week 1: Teardowns&lt;/h2&gt;&#xA;&lt;p&gt;Through this project I got to learn about ui design of different sites, how every component, space, text etc. matter for any site. I got stuck while learning about heuristics guidelines, but Once my doubts were cleared, I gained a much clearer understanding of heuristic principles and their practical use in UI/UX design.&#xA;It help to improve visual hierarchy, information placement and task flow. Examine an components such as navigation menus, search bars, filters, buttons, forms, product cards, carts, and checkout screens to identify usability issues, it’s give a sense to any ui design site how actually design work and every design has its meaning  its not place it randomly. If I were to redo it, I would approach it more concisely and with a better understanding of heuristic principles.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-2/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-2/reflection/</guid>
-      <description>&lt;p&gt;•&#x9;It took me some time to understand happy-path journey sequence. Initially, I used a different method where I listed the information present on each page and organized it into boxes. Later, I realized that wasn&amp;rsquo;t the right approach, so I revised my work and structured it properly.&lt;/p&gt;&#xA;&lt;p&gt;•&#x9;I learned how to brainstorm different branches of a user flow and how to design recovery paths for various error scenarios, such as declined payments, invalid addresses, and other checkout issues. I also understood the reasons why these failures occur.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-3/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-3/reflection/</guid>
-      <description>&lt;p&gt;•&#x9;The exported files from Figma (PDF and PNG) were too large, so I compressed them using Canva&amp;rsquo;s compressor before uploading.&lt;/p&gt;&#xA;&lt;p&gt;•&#x9;It took me some time to understand Apple Human Interface Guidelines (HIG) and how to apply its principles effectively in UI design.&lt;/p&gt;&#xA;&lt;p&gt;•&#x9;I learned how to design a cart page that clearly displays a complete order summary, including line items, taxes, shipping charges, discounts, and out-of-stock alerts. I also explored how tax calculations and discount redemption are presented within the cart.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-4/tokens.json/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-4/tokens.json/reflection/</guid>
-      <description>&lt;p&gt;This week, I faced several challenges while building my UI design system. One of the main difficulties was selecting an appropriate color palette for the interface. Through research and experimentation, I learned how colors are chosen based on brand identity, accessibility, visual hierarchy, and user comfort to create a balanced and eye-friendly experience. I also explored the structure of a tokens.jsons file, understood its syntax, learned how it is managed in VS Code, and practiced uploading it to GitHub. Additionally, I strengthened my understanding of basic HTML and CSS concepts. I also found it challenging to create the main  text field component with its four variants, as I needed to understand the purpose of each variant. Similarly, while creating the buttons component, I learned how different variants and interaction states contribute to a consistent, reusable, and user-friendly interface.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-5/accessibilitychecklist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-5/accessibilitychecklist/</guid>
-      <description>&lt;h2 id=&#34;week-5-wcag-22-aa&#34;&gt;Week 5: WCAG 2.2 AA&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Screen&lt;/th&gt;&#xA;          &lt;th&gt;Element&lt;/th&gt;&#xA;          &lt;th&gt;Foreground&lt;/th&gt;&#xA;          &lt;th&gt;Background&lt;/th&gt;&#xA;          &lt;th&gt;Contrast Ratio&lt;/th&gt;&#xA;          &lt;th&gt;WCAG 2.2 AA Requirement&lt;/th&gt;&#xA;          &lt;th&gt;Result&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Page Title&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;21:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Product Name&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#295174&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#DFF1F2&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;7.13:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Body Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#0E1E45&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16.27:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Primary Button Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#295174&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;8.32:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Secondary Button Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#56617D&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;6.17:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Input Border&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#244664&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;9.83:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Error Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#DC2626&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;4.83:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Success Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#2D6A4C&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;6.4:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Progress Stepper&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#295174&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#DFF1F2&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;7.13:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Disabled Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#464554&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;9.37:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Out of stock label&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#F1BF41&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FCEEED&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;1.51:1&lt;/td&gt;&#xA;          &lt;td&gt;Exempt (non-interactive)&lt;/td&gt;&#xA;          &lt;td&gt;Review&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Out of stock label&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#9D5E0B&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FCEEED&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;4.6:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coupon&lt;/td&gt;&#xA;          &lt;td&gt;Coupon code&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#0E1E45&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#E5F4F5&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;14.4:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coupon&lt;/td&gt;&#xA;          &lt;td&gt;Icon&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#0E1E45&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#B6E1E2&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;11.51:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coupon&lt;/td&gt;&#xA;          &lt;td&gt;Secure Check&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#1B1B23&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FEFAFA&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16.51:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coupon&lt;/td&gt;&#xA;          &lt;td&gt;Order successful text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#295174&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#F0FEFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;8.05:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Invalid Payment&lt;/td&gt;&#xA;          &lt;td&gt;Card of payment opt.&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#EB483E&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#F9FDFD&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;3.7:1&lt;/td&gt;&#xA;          &lt;td&gt;Exempt (non-interactive)&lt;/td&gt;&#xA;          &lt;td&gt;Review&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Payment Declined&lt;/td&gt;&#xA;          &lt;td&gt;Card tab error&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#1B1B23&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FCEFEF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16.51:1&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;week-5-intended-tab-order-of-invalid-payment&#34;&gt;Week 5: INTENDED Tab order of Invalid Payment&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: right&#34;&gt;Order&lt;/th&gt;&#xA;          &lt;th&gt;Element&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;①&lt;/td&gt;&#xA;          &lt;td&gt;Back Button&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;②&lt;/td&gt;&#xA;          &lt;td&gt;Progress Stepper&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;③&lt;/td&gt;&#xA;          &lt;td&gt;Recommend for You – Payment Method: Cash on Delivery (COD)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;④&lt;/td&gt;&#xA;          &lt;td&gt;Payment Method – UPI&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑤&lt;/td&gt;&#xA;          &lt;td&gt;Credit/Debit Card / ATM Card&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑥&lt;/td&gt;&#xA;          &lt;td&gt;Card Number Field&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑦&lt;/td&gt;&#xA;          &lt;td&gt;Expiry Date Field&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑧&lt;/td&gt;&#xA;          &lt;td&gt;CVV Field&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑨&lt;/td&gt;&#xA;          &lt;td&gt;Pay Later&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑩&lt;/td&gt;&#xA;          &lt;td&gt;EMI&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑪&lt;/td&gt;&#xA;          &lt;td&gt;Net Banking&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑫&lt;/td&gt;&#xA;          &lt;td&gt;Cash on Delivery (Cash/UPI)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑬&lt;/td&gt;&#xA;          &lt;td&gt;Have a Gift Card?&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑭&lt;/td&gt;&#xA;          &lt;td&gt;Terms &amp;amp; Conditions Checkbox&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑮&lt;/td&gt;&#xA;          &lt;td&gt;Pay Now Button&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;week-5-intended-tab-order-of-declined-payment&#34;&gt;Week 5: INTENDED Tab order of Declined Payment&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: right&#34;&gt;Order&lt;/th&gt;&#xA;          &lt;th&gt;Element&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;①&lt;/td&gt;&#xA;          &lt;td&gt;Back Button&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;②&lt;/td&gt;&#xA;          &lt;td&gt;Terms &amp;amp; Conditions Checkbox&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;③&lt;/td&gt;&#xA;          &lt;td&gt;Contact Support&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;④&lt;/td&gt;&#xA;          &lt;td&gt;Try Another Payment Method – Navigates the user to alternative payment options such as UPI, Card, Wallet, or Cash on Delivery&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: right&#34;&gt;⑤&lt;/td&gt;&#xA;          &lt;td&gt;Retry Transaction&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-5/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-5/reflection/</guid>
-      <description>&lt;h2 id=&#34;screen-changes&#34;&gt;Screen Changes&lt;/h2&gt;&#xA;&lt;p&gt;Tracking all the design iterations, component fixes, and UX improvements made while building out these screens.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;screen-changes-cart-in-collapsed-state&#34;&gt;Screen Changes: Cart in Collapsed State&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Progress Stepper:&lt;/strong&gt; Fix the alignment and color of the &lt;code&gt;{ProgressStepper}&lt;/code&gt; component.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Card:&lt;/strong&gt; Reduce the delete icon size from &lt;strong&gt;15px to 13px&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Save for Later:&lt;/strong&gt; Change the text style from highlighted to dim by setting the opacity to &lt;strong&gt;70%&lt;/strong&gt;. Also, reduce the typography size from &lt;strong&gt;16px to 14px&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-6/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-6/reflection/</guid>
-      <description>&lt;h1 id=&#34;week6-reflection&#34;&gt;week:6 Reflection&lt;/h1&gt;&#xA;&lt;h2 id=&#34;steps-i-got-stuck-during-the-task&#34;&gt;Steps I Got Stuck During the Task&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-keyboard-navigation--accessibility&#34;&gt;1. Keyboard Navigation &amp;amp; Accessibility&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraint:&lt;/strong&gt;&lt;br&gt;&#xA;Figma does not support true keyboard navigation using the &lt;strong&gt;Tab&lt;/strong&gt; key, automatic focus traversal, or keyboard-only interaction within prototypes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Workaround:&lt;/strong&gt;&lt;br&gt;&#xA;Documented the intended keyboard focus order and accessibility behavior through annotations. These interactions are intended for implementation during frontend development (HTML/CSS/JavaScript) following &lt;strong&gt;WCAG 2.2 AA&lt;/strong&gt; guidelines.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;2-input-field--micro-interactions&#34;&gt;2. Input Field &amp;amp; Micro-interactions&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraint:&lt;/strong&gt;&lt;br&gt;&#xA;Figma cannot simulate live text entry, a blinking text cursor (caret), automatic focus movement between input fields, or real-time form validation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-7/ab-test-plan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-7/ab-test-plan/</guid>
-      <description>&lt;h1 id=&#34;ab-test-proposal-guest-checkout-visibility&#34;&gt;A/B Test Proposal: Guest Checkout Visibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;hypothesis&#34;&gt;Hypothesis&lt;/h2&gt;&#xA;&lt;p&gt;Making the &lt;strong&gt;Continue as Guest&lt;/strong&gt; option more visible and displaying a guest-checkout notification during checkout will reduce user confusion, improve user confidence, and increase successful guest checkout completion.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;control-version-a&#34;&gt;Control (Version A)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Current Design&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Continue as Guest appears below the Sign In option.&lt;/li&gt;&#xA;&lt;li&gt;No guest-checkout notification is displayed.&lt;/li&gt;&#xA;&lt;li&gt;Users proceed through checkout without confirmation that they are checking out as a guest.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;variant-version-b&#34;&gt;Variant (Version B)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Improved Design&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-7/accessibility-checklist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-7/accessibility-checklist/</guid>
-      <description>&lt;h2 id=&#34;updated-with-the-post-fix-re-check&#34;&gt;Updated with the post-fix re-check&lt;/h2&gt;&#xA;&lt;h1 id=&#34;wcag-22-aa-contrast-validation&#34;&gt;WCAG 2.2 AA Contrast Validation&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Screen&lt;/th&gt;&#xA;          &lt;th&gt;Element&lt;/th&gt;&#xA;          &lt;th&gt;Foreground&lt;/th&gt;&#xA;          &lt;th&gt;Background&lt;/th&gt;&#xA;          &lt;th&gt;Contrast Ratio&lt;/th&gt;&#xA;          &lt;th&gt;WCAG 2.2 AA Requirement&lt;/th&gt;&#xA;          &lt;th&gt;Result&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Payment&lt;/td&gt;&#xA;          &lt;td&gt;Text Field&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#737378&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;strong&gt;4.71:1&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Sign-in Notification&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#0E1E45&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#F3FBFB&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;strong&gt;15.5:1&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkout&lt;/td&gt;&#xA;          &lt;td&gt;Secondary Button Text&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#295174&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;strong&gt;8.32:1&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;≥ 4.5:1&lt;/td&gt;&#xA;          &lt;td&gt;✅ Pass&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;accessibility-note&#34;&gt;Accessibility Note&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; As previously mentioned in &lt;strong&gt;Task 6&lt;/strong&gt;, Figma does not support true Tab-order keyboard navigation. Focus traversal and keyboard accessibility are intended for implementation during frontend development (HTML/CSS/JavaScript).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-7/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-7/reflection/</guid>
-      <description>&lt;h1 id=&#34;reflection&#34;&gt;Reflection&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-surprised-me&#34;&gt;What Surprised Me&lt;/h2&gt;&#xA;&lt;p&gt;I was surprised by how much planning is required beyond designing UI screens. I learned that usability testing, accessibility checks, spacing consistency, typography, A/B testing, and documenting prototype limitations are all essential parts of creating a user-centered checkout experience.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-i-got-stuck-on&#34;&gt;What I Got Stuck On&lt;/h2&gt;&#xA;&lt;p&gt;I found Figma prototyping challenging, especially when handling multiple checkout scenarios such as payment failure, coupon validation, and shipping errors. I also struggled with Figma&amp;rsquo;s limitations, including the lack of true keyboard navigation, real input interactions, and dynamic branching within a single prototype.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ecommerce-checkout-flow/process/week-8/reflection/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ecommerce-checkout-flow/process/week-8/reflection/</guid>
-      <description>&lt;h1 id=&#34;week-8-reflection&#34;&gt;Week 8 Reflection&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-i-shipped&#34;&gt;What I Shipped&lt;/h2&gt;&#xA;&lt;p&gt;During Week 8, I worked on completing and refining my e-commerce case study by improving the UI structure, documenting the design process, and preparing the project for portfolio presentation. I shipped key sections including the high-fidelity screens, prototype updates, design system documentation, and design process improvements. I also organized important UX concepts such as design decisions, usability findings, constraints, and iterations to make the case study easier to understand.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Processes on</title><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/</link><description>Recent content in Processes on</description><generator>Hugo</generator><language>en</language><atom:link href="https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-0/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-0/glossary/</guid><description>&lt;h1 id="design-glossary">Design Glossary&lt;/h1>
+&lt;h3 id="design-system">Design System&lt;/h3>
+&lt;p>A design system is a collection of reusable components, guidelines, and principles that help create consistent digital products.&lt;/p>
+&lt;h3 id="design-token">Design Token&lt;/h3>
+&lt;p>A design token is a small, reusable value such as a color, spacing, typography, or radius variable used to maintain design consistency.&lt;/p>
+&lt;h3 id="wireframe">Wireframe&lt;/h3>
+&lt;p>A wireframe is a basic visual layout of a product that shows structure, content placement, and user flow without detailed styling.&lt;/p>
+&lt;h3 id="hi-fi">Hi-Fi&lt;/h3>
+&lt;p>A hi-fi (high-fidelity) design is a detailed visual representation of a final product including colors, typography, images, and interactions.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-1/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-1/reflection/</guid><description>&lt;h2 id="week-1-teardowns">Week 1: Teardowns&lt;/h2>
+&lt;p>Through this project I got to learn about ui design of different sites, how every component, space, text etc. matter for any site. I got stuck while learning about heuristics guidelines, but Once my doubts were cleared, I gained a much clearer understanding of heuristic principles and their practical use in UI/UX design.
+It help to improve visual hierarchy, information placement and task flow. Examine an components such as navigation menus, search bars, filters, buttons, forms, product cards, carts, and checkout screens to identify usability issues, it’s give a sense to any ui design site how actually design work and every design has its meaning its not place it randomly. If I were to redo it, I would approach it more concisely and with a better understanding of heuristic principles.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-2/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-2/reflection/</guid><description>&lt;p>•	It took me some time to understand happy-path journey sequence. Initially, I used a different method where I listed the information present on each page and organized it into boxes. Later, I realized that wasn&amp;rsquo;t the right approach, so I revised my work and structured it properly.&lt;/p>
+&lt;p>•	I learned how to brainstorm different branches of a user flow and how to design recovery paths for various error scenarios, such as declined payments, invalid addresses, and other checkout issues. I also understood the reasons why these failures occur.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-3/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-3/reflection/</guid><description>&lt;p>•	The exported files from Figma (PDF and PNG) were too large, so I compressed them using Canva&amp;rsquo;s compressor before uploading.&lt;/p>
+&lt;p>•	It took me some time to understand Apple Human Interface Guidelines (HIG) and how to apply its principles effectively in UI design.&lt;/p>
+&lt;p>•	I learned how to design a cart page that clearly displays a complete order summary, including line items, taxes, shipping charges, discounts, and out-of-stock alerts. I also explored how tax calculations and discount redemption are presented within the cart.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-4/tokens.json/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-4/tokens.json/reflection/</guid><description>&lt;p>This week, I faced several challenges while building my UI design system. One of the main difficulties was selecting an appropriate color palette for the interface. Through research and experimentation, I learned how colors are chosen based on brand identity, accessibility, visual hierarchy, and user comfort to create a balanced and eye-friendly experience. I also explored the structure of a tokens.jsons file, understood its syntax, learned how it is managed in VS Code, and practiced uploading it to GitHub. Additionally, I strengthened my understanding of basic HTML and CSS concepts. I also found it challenging to create the main text field component with its four variants, as I needed to understand the purpose of each variant. Similarly, while creating the buttons component, I learned how different variants and interaction states contribute to a consistent, reusable, and user-friendly interface.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-5/accessibilitychecklist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-5/accessibilitychecklist/</guid><description>&lt;h2 id="week-5-wcag-22-aa">Week 5: WCAG 2.2 AA&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Screen&lt;/th>
+ &lt;th>Element&lt;/th>
+ &lt;th>Foreground&lt;/th>
+ &lt;th>Background&lt;/th>
+ &lt;th>Contrast Ratio&lt;/th>
+ &lt;th>WCAG 2.2 AA Requirement&lt;/th>
+ &lt;th>Result&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Page Title&lt;/td>
+ &lt;td>&lt;code>#000000&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>21:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Product Name&lt;/td>
+ &lt;td>&lt;code>#295174&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#DFF1F2&lt;/code>&lt;/td>
+ &lt;td>7.13:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Body Text&lt;/td>
+ &lt;td>&lt;code>#0E1E45&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>16.27:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Primary Button Text&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#295174&lt;/code>&lt;/td>
+ &lt;td>8.32:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Secondary Button Text&lt;/td>
+ &lt;td>&lt;code>#56617D&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>6.17:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Input Border&lt;/td>
+ &lt;td>&lt;code>#244664&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>9.83:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Error Text&lt;/td>
+ &lt;td>&lt;code>#DC2626&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>4.83:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Success Text&lt;/td>
+ &lt;td>&lt;code>#2D6A4C&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>6.4:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Progress Stepper&lt;/td>
+ &lt;td>&lt;code>#295174&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#DFF1F2&lt;/code>&lt;/td>
+ &lt;td>7.13:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Disabled Text&lt;/td>
+ &lt;td>&lt;code>#464554&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>9.37:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Out of stock label&lt;/td>
+ &lt;td>&lt;code>#F1BF41&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FCEEED&lt;/code>&lt;/td>
+ &lt;td>1.51:1&lt;/td>
+ &lt;td>Exempt (non-interactive)&lt;/td>
+ &lt;td>Review&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Out of stock label&lt;/td>
+ &lt;td>&lt;code>#9D5E0B&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FCEEED&lt;/code>&lt;/td>
+ &lt;td>4.6:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coupon&lt;/td>
+ &lt;td>Coupon code&lt;/td>
+ &lt;td>&lt;code>#0E1E45&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#E5F4F5&lt;/code>&lt;/td>
+ &lt;td>14.4:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coupon&lt;/td>
+ &lt;td>Icon&lt;/td>
+ &lt;td>&lt;code>#0E1E45&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#B6E1E2&lt;/code>&lt;/td>
+ &lt;td>11.51:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coupon&lt;/td>
+ &lt;td>Secure Check&lt;/td>
+ &lt;td>&lt;code>#1B1B23&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FEFAFA&lt;/code>&lt;/td>
+ &lt;td>16.51:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Coupon&lt;/td>
+ &lt;td>Order successful text&lt;/td>
+ &lt;td>&lt;code>#295174&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#F0FEFF&lt;/code>&lt;/td>
+ &lt;td>8.05:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Invalid Payment&lt;/td>
+ &lt;td>Card of payment opt.&lt;/td>
+ &lt;td>&lt;code>#EB483E&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#F9FDFD&lt;/code>&lt;/td>
+ &lt;td>3.7:1&lt;/td>
+ &lt;td>Exempt (non-interactive)&lt;/td>
+ &lt;td>Review&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Payment Declined&lt;/td>
+ &lt;td>Card tab error&lt;/td>
+ &lt;td>&lt;code>#1B1B23&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FCEFEF&lt;/code>&lt;/td>
+ &lt;td>16.51:1&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="week-5-intended-tab-order-of-invalid-payment">Week 5: INTENDED Tab order of Invalid Payment&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: right">Order&lt;/th>
+ &lt;th>Element&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: right">①&lt;/td>
+ &lt;td>Back Button&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">②&lt;/td>
+ &lt;td>Progress Stepper&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">③&lt;/td>
+ &lt;td>Recommend for You – Payment Method: Cash on Delivery (COD)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">④&lt;/td>
+ &lt;td>Payment Method – UPI&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑤&lt;/td>
+ &lt;td>Credit/Debit Card / ATM Card&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑥&lt;/td>
+ &lt;td>Card Number Field&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑦&lt;/td>
+ &lt;td>Expiry Date Field&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑧&lt;/td>
+ &lt;td>CVV Field&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑨&lt;/td>
+ &lt;td>Pay Later&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑩&lt;/td>
+ &lt;td>EMI&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑪&lt;/td>
+ &lt;td>Net Banking&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑫&lt;/td>
+ &lt;td>Cash on Delivery (Cash/UPI)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑬&lt;/td>
+ &lt;td>Have a Gift Card?&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑭&lt;/td>
+ &lt;td>Terms &amp;amp; Conditions Checkbox&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑮&lt;/td>
+ &lt;td>Pay Now Button&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="week-5-intended-tab-order-of-declined-payment">Week 5: INTENDED Tab order of Declined Payment&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: right">Order&lt;/th>
+ &lt;th>Element&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: right">①&lt;/td>
+ &lt;td>Back Button&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">②&lt;/td>
+ &lt;td>Terms &amp;amp; Conditions Checkbox&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">③&lt;/td>
+ &lt;td>Contact Support&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">④&lt;/td>
+ &lt;td>Try Another Payment Method – Navigates the user to alternative payment options such as UPI, Card, Wallet, or Cash on Delivery&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: right">⑤&lt;/td>
+ &lt;td>Retry Transaction&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-5/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-5/reflection/</guid><description>&lt;h2 id="screen-changes">Screen Changes&lt;/h2>
+&lt;p>Tracking all the design iterations, component fixes, and UX improvements made while building out these screens.&lt;/p>
+&lt;hr>
+&lt;h2 id="screen-changes-cart-in-collapsed-state">Screen Changes: Cart in Collapsed State&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Progress Stepper:&lt;/strong> Fix the alignment and color of the &lt;code>{ProgressStepper}&lt;/code> component.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Card:&lt;/strong> Reduce the delete icon size from &lt;strong>15px to 13px&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Save for Later:&lt;/strong> Change the text style from highlighted to dim by setting the opacity to &lt;strong>70%&lt;/strong>. Also, reduce the typography size from &lt;strong>16px to 14px&lt;/strong>.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-6/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-6/reflection/</guid><description>&lt;h1 id="week6-reflection">week:6 Reflection&lt;/h1>
+&lt;h2 id="steps-i-got-stuck-during-the-task">Steps I Got Stuck During the Task&lt;/h2>
+&lt;h3 id="1-keyboard-navigation--accessibility">1. Keyboard Navigation &amp;amp; Accessibility&lt;/h3>
+&lt;p>&lt;strong>Constraint:&lt;/strong>&lt;br>
+Figma does not support true keyboard navigation using the &lt;strong>Tab&lt;/strong> key, automatic focus traversal, or keyboard-only interaction within prototypes.&lt;/p>
+&lt;p>&lt;strong>Workaround:&lt;/strong>&lt;br>
+Documented the intended keyboard focus order and accessibility behavior through annotations. These interactions are intended for implementation during frontend development (HTML/CSS/JavaScript) following &lt;strong>WCAG 2.2 AA&lt;/strong> guidelines.&lt;/p>
+&lt;hr>
+&lt;h3 id="2-input-field--micro-interactions">2. Input Field &amp;amp; Micro-interactions&lt;/h3>
+&lt;p>&lt;strong>Constraint:&lt;/strong>&lt;br>
+Figma cannot simulate live text entry, a blinking text cursor (caret), automatic focus movement between input fields, or real-time form validation.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-7/ab-test-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-7/ab-test-plan/</guid><description>&lt;h1 id="ab-test-proposal-guest-checkout-visibility">A/B Test Proposal: Guest Checkout Visibility&lt;/h1>
+&lt;h2 id="hypothesis">Hypothesis&lt;/h2>
+&lt;p>Making the &lt;strong>Continue as Guest&lt;/strong> option more visible and displaying a guest-checkout notification during checkout will reduce user confusion, improve user confidence, and increase successful guest checkout completion.&lt;/p>
+&lt;hr>
+&lt;h2 id="control-version-a">Control (Version A)&lt;/h2>
+&lt;p>&lt;strong>Current Design&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Continue as Guest appears below the Sign In option.&lt;/li>
+&lt;li>No guest-checkout notification is displayed.&lt;/li>
+&lt;li>Users proceed through checkout without confirmation that they are checking out as a guest.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="variant-version-b">Variant (Version B)&lt;/h2>
+&lt;p>&lt;strong>Improved Design&lt;/strong>&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-7/accessibility-checklist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-7/accessibility-checklist/</guid><description>&lt;h2 id="updated-with-the-post-fix-re-check">Updated with the post-fix re-check&lt;/h2>
+&lt;h1 id="wcag-22-aa-contrast-validation">WCAG 2.2 AA Contrast Validation&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Screen&lt;/th>
+ &lt;th>Element&lt;/th>
+ &lt;th>Foreground&lt;/th>
+ &lt;th>Background&lt;/th>
+ &lt;th>Contrast Ratio&lt;/th>
+ &lt;th>WCAG 2.2 AA Requirement&lt;/th>
+ &lt;th>Result&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Payment&lt;/td>
+ &lt;td>Text Field&lt;/td>
+ &lt;td>&lt;code>#737378&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>&lt;strong>4.71:1&lt;/strong>&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Sign-in Notification&lt;/td>
+ &lt;td>&lt;code>#0E1E45&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#F3FBFB&lt;/code>&lt;/td>
+ &lt;td>&lt;strong>15.5:1&lt;/strong>&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Checkout&lt;/td>
+ &lt;td>Secondary Button Text&lt;/td>
+ &lt;td>&lt;code>#295174&lt;/code>&lt;/td>
+ &lt;td>&lt;code>#FFFFFF&lt;/code>&lt;/td>
+ &lt;td>&lt;strong>8.32:1&lt;/strong>&lt;/td>
+ &lt;td>≥ 4.5:1&lt;/td>
+ &lt;td>✅ Pass&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="accessibility-note">Accessibility Note&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> As previously mentioned in &lt;strong>Task 6&lt;/strong>, Figma does not support true Tab-order keyboard navigation. Focus traversal and keyboard accessibility are intended for implementation during frontend development (HTML/CSS/JavaScript).&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-7/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-7/reflection/</guid><description>&lt;h1 id="reflection">Reflection&lt;/h1>
+&lt;h2 id="what-surprised-me">What Surprised Me&lt;/h2>
+&lt;p>I was surprised by how much planning is required beyond designing UI screens. I learned that usability testing, accessibility checks, spacing consistency, typography, A/B testing, and documenting prototype limitations are all essential parts of creating a user-centered checkout experience.&lt;/p>
+&lt;hr>
+&lt;h2 id="what-i-got-stuck-on">What I Got Stuck On&lt;/h2>
+&lt;p>I found Figma prototyping challenging, especially when handling multiple checkout scenarios such as payment failure, coupon validation, and shipping errors. I also struggled with Figma&amp;rsquo;s limitations, including the lack of true keyboard navigation, real input interactions, and dynamic branching within a single prototype.&lt;/p></description></item><item><title/><link>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-8/reflection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/process/week-8/reflection/</guid><description>&lt;h1 id="week-8-reflection">Week 8 Reflection&lt;/h1>
+&lt;h2 id="what-i-shipped">What I Shipped&lt;/h2>
+&lt;p>During Week 8, I worked on completing and refining my e-commerce case study by improving the UI structure, documenting the design process, and preparing the project for portfolio presentation. I shipped key sections including the high-fidelity screens, prototype updates, design system documentation, and design process improvements. I also organized important UX concepts such as design decisions, usability findings, constraints, and iterations to make the case study easier to understand.&lt;/p></description></item></channel></rss>

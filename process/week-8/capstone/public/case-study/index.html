@@ -1,584 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head><script src="/ecommerce-checkout-flow/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ecommerce-checkout-flow/livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> | Checkout Flow Redesign</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="http://localhost:1313/ecommerce-checkout-flow/ecommerce-checkout-flow/css/site.min.b17521213b3185ca6c795bfe7799595644bbba67638ad831c507f3dc89b440c9.css">
-  </head>
-  <body>
-    <header class="site-header">
-  <div class="container nav">
-    <a href="http://localhost:1313/ecommerce-checkout-flow/" class="brand">Shrishti</a>
-    <nav>
-      <a href="http://localhost:1313/ecommerce-checkout-flow/">Home</a>
-      <a href="http://localhost:1313/ecommerce-checkout-flow/case-study/">Case Study</a>
-      <a href="http://localhost:1313/ecommerce-checkout-flow/design-guidelines/">Guidelines</a>
-      <a href="http://localhost:1313/ecommerce-checkout-flow/design-system/">Design System</a>
-    </nav>
-  </div>
-</header>
-
-    <main>
-      
-  <article class="page">
-    <div class="container">
-      <section class="cs-hero">
-  <div class="container">
-    <p class="eyebrow">Case Study · UI/UX Capstone</p>
-    <h1>Redesigning a mobile checkout for clarity, trust, and accessibility.</h1>
-    <p class="lead">An 8-week capstone project that took a cluttered e-commerce checkout and rebuilt it around a calmer visual system, explicit error recovery, and WCAG&nbsp;2.2&nbsp;AA accessibility — covering research, user flows, design tokens, hi-fi UI, prototyping, and testing.</p>
-    <div class="cs-meta">
-      <span><strong>Role:</strong> UI/UX designer</span>
-      <span><strong>Timeline:</strong> 8 weeks</span>
-      <span><strong>Platform:</strong> Mobile-first</span>
-      <span><strong>Tools:</strong> Figma, Canva, VS Code, Hugo</span>
-    </div>
-  </div>
-</section>
-<div class="container">
-<h2 id="interactive-prototype">Interactive prototype</h2>
-<p>Explore the full checkout flow prototype below — tap through the happy path, coupon, payment, and shipping flows directly in Figma.</p>
-<div class="figma-embed">
-  <iframe
-    src="https://embed.figma.com/design/IKRlJz0TSk73ZOhhFNZQUt/ecommerce-checkout-flow?node-id=1-3&amp;embed-host=share"
-    title="E-commerce checkout flow prototype"
-    style="border: 1px solid rgba(0, 0, 0, 0.1);"
-    width="100%"
-    height="450"
-    allowfullscreen>
-  </iframe>
-</div>
-
-  <div class="cs-metrics">
-    <div class="cs-metric"><div class="value">4</div><div class="label">error-recovery flows designed</div></div>
-    <div class="cs-metric"><div class="value">19</div><div class="label">contrast checks audited</div></div>
-    <div class="cs-metric"><div class="value">AA</div><div class="label">WCAG 2.2 target met</div></div>
-    <div class="cs-metric"><div class="value">1</div><div class="label">A/B test proposed</div></div>
-  </div>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">01</span> Problem</h2>
-      <p>Mobile e-commerce checkouts lose users at the moment that matters most — when they're ready to pay. Common drop-off causes surfaced during the project: unclear pricing (MRP, taxes, shipping, discounts, platform fees), no obvious guest-checkout option, harsh colors causing eye strain, and hard failure states with no recovery path for declined cards, invalid coupons, or shipping errors.</p>
-      <div class="cs-callout">
-        <strong>Core insight.</strong> Users care about the <em>final price they pay</em> and whether they feel they're getting a fair deal before purchasing. Everything else — speed, trust, polish — only matters once that's clear.
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">02</span> Users</h2>
-      <p>The checkout was designed for mobile-first shoppers who value speed, transparency, and control — especially first-time buyers without an account and returning users hitting a payment failure.</p>
-      <div class="cs-personas">
-        <div class="cs-persona">
-          <div class="avatar">PR</div>
-          <div class="name">Priya, 27</div>
-          <div class="role">First-time mobile shopper</div>
-          <ul>
-            <li>Doesn't want to create an account</li>
-            <li>Needs the total price up front</li>
-            <li>Loses trust on unexpected fees</li>
-          </ul>
-        </div>
-        <div class="cs-persona">
-          <div class="avatar">AM</div>
-          <div class="name">Aman, 34</div>
-          <div class="role">Returning buyer, card user</div>
-          <ul>
-            <li>Expects saved details to work</li>
-            <li>Gets frustrated by declined cards with no guidance</li>
-            <li>Wants quick retry, not a dead end</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">03</span> Constraints</h2>
-      <p>The biggest constraints came from the prototyping tool itself: Figma could not simulate real application behaviour, so certain interactions could only be <em>documented</em>, not demonstrated. Across weeks 5–7 these limitations forced explicit, reviewable design decisions instead of hidden workarounds.</p>
-      <div class="cs-constraints">
-        <div class="cs-constraint">
-          <span class="week">Week 5 · Keyboard nav</span>
-          <p>No real <kbd>Tab</kbd>-order focus traversal exists inside a Figma prototype — focus can't be demonstrated interactively.</p>
-          <div class="fix">→ Intended focus order documented as numbered tab-order tables (see Testing).</div>
-        </div>
-        <div class="cs-constraint">
-          <span class="week">Week 6 · Live inputs</span>
-          <p>No live text entry, blinking caret, auto-focus movement, or real-time form validation.</p>
-          <div class="fix">→ Built explicit component variants for every state (Default → Disabled).</div>
-        </div>
-        <div class="cs-constraint">
-          <span class="week">Week 6 · Branching</span>
-          <p>A single interaction can't branch to multiple outcomes — Pay Now can't route to success or failure based on input.</p>
-          <div class="fix">→ Split the prototype into four independent flows (see Prototype).</div>
-        </div>
-        <div class="cs-constraint">
-          <span class="week">Week 6 · Submission</span>
-          <p>Figma shares the entire design page, and the submission portal rejected a URL text file.</p>
-          <div class="fix">→ Packaged a view-only hyperlink inside a PDF for reviewer access.</div>
-        </div>
-      </div>
-      <p style="margin-top:1.25rem"><strong>Example — button states.</strong> Because a static frame can't show real hover/focus/pressed behaviour, each interaction state was designed as an explicit pill-button variant in the app palette:</p>
-      <div class="cs-btn-states">
-        <div class="state-chip"><span class="demo-btn default">Pay now</span><span class="state-label">Default</span></div>
-        <div class="state-chip"><span class="demo-btn ghost">Pay now</span><span class="state-label">Ghost</span></div>
-        <div class="state-chip"><span class="demo-btn hover">Pay now</span><span class="state-label">Hover</span></div>
-        <div class="state-chip"><span class="demo-btn focus">Pay now</span><span class="state-label">Focus</span></div>
-        <div class="state-chip"><span class="demo-btn pressed">Pay now</span><span class="state-label">Pressed</span></div>
-        <div class="state-chip"><span class="demo-btn disabled">Pay now</span><span class="state-label">Disabled</span></div>
-        <div class="state-chip"><span class="demo-btn loading">Pay now</span><span class="state-label">Loading</span></div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">04</span> Solution</h2>
-      <p>A redesigned checkout anchored on three principles drawn directly from the research: <strong>clarity</strong> (transparent totals, calm colors with a clear purpose per color), <strong>recovery</strong> (every error state leads somewhere, never to a dead end), and <strong>accessibility</strong> (WCAG 2.2 AA contrast and a documented keyboard tab order from the start).</p>
-      <p>The final payment screen consolidates method selection, a recommendation nudge ("In your previous order, you used COD"), and a single confident primary action — Pay Now.</p>
-      <div class="cs-figure">
-        <img src="http://localhost:1313/ecommerce-checkout-flow/img/payment-method.png" alt="Final payment-method screen showing UPI, card, COD and other options with a Pay Now button">
-        <div class="caption">Final payment-method screen — method selection with contextual recommendation and a single primary action.</div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">05</span> Research</h2>
-      <p>Research ran across all eight weeks and combined three methods: heuristic teardowns of live e-commerce checkouts (week 1), an accessibility contrast audit against WCAG 2.2 AA (week 5), and a structured A/B test proposal for guest-checkout visibility (week 7).</p>
-      <div class="cs-split">
-        <div>
-          <h3>Heuristic teardowns</h3>
-          <p>Studied navigation menus, search, filters, buttons, forms, product cards, carts, and checkout screens to identify usability issues. Learning that <em>every element has a reason for its placement</em> — nothing is random — reshaped how I approached hierarchy and information scent.</p>
-        </div>
-        <div>
-          <h3>Pricing transparency</h3>
-          <p>Investigated how MRP, taxes, shipping, discounts, and platform fees combine — and the roles of sellers, brands, and platforms. Confirmed that perceived fairness of the final price outweighs speed and polish.</p>
-        </div>
-      </div>
-      <h3 style="margin-top:1.5rem">A/B test proposal — guest checkout visibility</h3>
-      <div class="cs-callout">
-        <strong>Hypothesis.</strong> Making <em>Continue as Guest</em> more visible and showing a guest-checkout notification during checkout will reduce user confusion, improve user confidence, and increase successful guest-checkout completion.
-      </div>
-      <div class="cs-ab-grid">
-        <div class="cs-ab-card control">
-          <span class="tag">Version A · Control</span>
-          <h3>Current design</h3>
-          <ul>
-            <li>Continue as Guest appears <em>below</em> the Sign In option.</li>
-            <li>No guest-checkout notification is displayed.</li>
-            <li>Users proceed without confirmation they're checking out as a guest.</li>
-          </ul>
-        </div>
-        <div class="cs-ab-card variant">
-          <span class="tag">Version B · Variant</span>
-          <h3>Improved design</h3>
-          <ul>
-            <li>Display <strong>Continue as Guest</strong> as the primary action.</li>
-            <li>Surface this notification on the Shipping Address screen after Guest Checkout is selected:</li>
-          </ul>
-          <div class="cs-ab-quote">You are currently checking out as a guest. Sign in at any time to save your details.</div>
-        </div>
-      </div>
-      <h4 style="margin-bottom:0.25rem">Metrics</h4>
-      <ul class="cs-ab-metrics">
-        <li>Time taken to locate <strong>Continue as Guest</strong></li>
-        <li>% of users selecting <strong>Continue as Guest</strong></li>
-        <li>Number of users asking whether sign-in is required</li>
-        <li>% who notice and understand the guest-checkout notification</li>
-        <li>Task completion rate</li>
-        <li>User confidence during checkout (participant feedback)</li>
-      </ul>
-      <h4 style="margin-bottom:0.25rem">Risks</h4>
-      <ul class="cs-ab-risks">
-        <li>Returning users may overlook the <strong>Sign In</strong> option.</li>
-        <li>Users may ignore the guest-checkout notification.</li>
-        <li>A more prominent Guest option may reduce account sign-ins.</li>
-        <li>The notification may add visual clutter if too prominent.</li>
-      </ul>
-      <div class="cs-callout" style="border-left-color:#2F855A;background:#f0fdf4">
-        <strong style="color:#2F855A">Expected outcome.</strong> Users find the Guest Checkout option more easily, understand an account isn't required, and complete checkout with greater confidence and less confusion.
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">06</span> User Flow</h2>
-      <p>The checkout was mapped as a happy path plus four explicit error branches, because a single linear prototype couldn't represent the real range of outcomes. Designing recovery paths for declined payments, invalid coupons, and shipping errors forced clarity on <em>what happens when things go wrong</em>.</p>
-      <div class="cs-flow">
-        <span class="cs-step">Cart</span><span class="cs-arrow">→</span>
-        <span class="cs-step">Shipping</span><span class="cs-arrow">→</span>
-        <span class="cs-step">Payment</span><span class="cs-arrow">→</span>
-        <span class="cs-step">Review</span><span class="cs-arrow">→</span>
-        <span class="cs-step">Order Success</span>
-      </div>
-      <div class="cs-flow">
-        <span class="cs-step alt">Coupon invalid</span><span class="cs-arrow">→</span>
-        <span class="cs-step alt">Shipping error</span><span class="cs-arrow">→</span>
-        <span class="cs-step alt">Payment declined</span><span class="cs-arrow">→</span>
-        <span class="cs-step alt">Card retry</span>
-      </div>
-      <p>Each branch was built as its own prototype flow so reviewers could experience the recovery journey in isolation, rather than relying on a single happy-path demo.</p>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">07</span> Information Architecture</h2>
-      <p>Because the checkout couldn't be one linear prototype, it was architected as a root with four independent flows. Each flow owns a specific slice of the journey — the happy path end-to-end, plus three error/recovery branches — so every scenario can be reviewed in isolation.</p>
-      <pre class="cs-ia-tree"><span class="root">Checkout</span>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>| Checkout Flow Redesign</title>
+<link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel=stylesheet><link rel=stylesheet href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/ecommerce-checkout-flow/css/site.min.b17521213b3185ca6c795bfe7799595644bbba67638ad831c507f3dc89b440c9.css></head><body><header class=site-header><div class="container nav"><a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/ class=brand>Shrishti</a><nav><a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/>Home</a>
+<a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/case-study/>Case Study</a>
+<a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-guidelines/>Guidelines</a>
+<a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-system/>Design System</a></nav></div></header><main><article class=page><div class=container><section class=cs-hero><div class=container><p class=eyebrow>Case Study · UI/UX Capstone</p><h1>Redesigning a mobile checkout for clarity, trust, and accessibility.</h1><p class=lead>An 8-week capstone project that took a cluttered e-commerce checkout and rebuilt it around a calmer visual system, explicit error recovery, and WCAG&nbsp;2.2&nbsp;AA accessibility — covering research, user flows, design tokens, hi-fi UI, prototyping, and testing.</p><div class=cs-meta><span><strong>Role:</strong> UI/UX designer</span>
+<span><strong>Timeline:</strong> 8 weeks</span>
+<span><strong>Platform:</strong> Mobile-first</span>
+<span><strong>Tools:</strong> Figma, Canva, VS Code, Hugo</span></div></div></section><div class=container><h2 id=interactive-prototype>Interactive prototype</h2><p>Explore the full checkout flow prototype below — tap through the happy path, coupon, payment, and shipping flows directly in Figma.</p><div class=figma-embed><iframe src="https://embed.figma.com/design/IKRlJz0TSk73ZOhhFNZQUt/ecommerce-checkout-flow?node-id=1-3&amp;embed-host=share" title="E-commerce checkout flow prototype" style="border:1px solid rgba(0,0,0,.1)" width=100% height=450 allowfullscreen></iframe></div><div class=cs-metrics><div class=cs-metric><div class=value>4</div><div class=label>error-recovery flows designed</div></div><div class=cs-metric><div class=value>19</div><div class=label>contrast checks audited</div></div><div class=cs-metric><div class=value>AA</div><div class=label>WCAG 2.2 target met</div></div><div class=cs-metric><div class=value>1</div><div class=label>A/B test proposed</div></div></div><section class=cs-section><div class=container><h2><span class=num>01</span> Problem</h2><p>Mobile e-commerce checkouts lose users at the moment that matters most — when they're ready to pay. Common drop-off causes surfaced during the project: unclear pricing (MRP, taxes, shipping, discounts, platform fees), no obvious guest-checkout option, harsh colors causing eye strain, and hard failure states with no recovery path for declined cards, invalid coupons, or shipping errors.</p><div class=cs-callout><strong>Core insight.</strong> Users care about the <em>final price they pay</em> and whether they feel they're getting a fair deal before purchasing. Everything else — speed, trust, polish — only matters once that's clear.</div></div></section><section class=cs-section><div class=container><h2><span class=num>02</span> Users</h2><p>The checkout was designed for mobile-first shoppers who value speed, transparency, and control — especially first-time buyers without an account and returning users hitting a payment failure.</p><div class=cs-personas><div class=cs-persona><div class=avatar>PR</div><div class=name>Priya, 27</div><div class=role>First-time mobile shopper</div><ul><li>Doesn't want to create an account</li><li>Needs the total price up front</li><li>Loses trust on unexpected fees</li></ul></div><div class=cs-persona><div class=avatar>AM</div><div class=name>Aman, 34</div><div class=role>Returning buyer, card user</div><ul><li>Expects saved details to work</li><li>Gets frustrated by declined cards with no guidance</li><li>Wants quick retry, not a dead end</li></ul></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>03</span> Constraints</h2><p>The biggest constraints came from the prototyping tool itself: Figma could not simulate real application behaviour, so certain interactions could only be <em>documented</em>, not demonstrated. Across weeks 5–7 these limitations forced explicit, reviewable design decisions instead of hidden workarounds.</p><div class=cs-constraints><div class=cs-constraint><span class=week>Week 5 · Keyboard nav</span><p>No real <kbd>Tab</kbd>-order focus traversal exists inside a Figma prototype — focus can't be demonstrated interactively.</p><div class=fix>→ Intended focus order documented as numbered tab-order tables (see Testing).</div></div><div class=cs-constraint><span class=week>Week 6 · Live inputs</span><p>No live text entry, blinking caret, auto-focus movement, or real-time form validation.</p><div class=fix>→ Built explicit component variants for every state (Default → Disabled).</div></div><div class=cs-constraint><span class=week>Week 6 · Branching</span><p>A single interaction can't branch to multiple outcomes — Pay Now can't route to success or failure based on input.</p><div class=fix>→ Split the prototype into four independent flows (see Prototype).</div></div><div class=cs-constraint><span class=week>Week 6 · Submission</span><p>Figma shares the entire design page, and the submission portal rejected a URL text file.</p><div class=fix>→ Packaged a view-only hyperlink inside a PDF for reviewer access.</div></div></div><p style=margin-top:1.25rem><strong>Example — button states.</strong> Because a static frame can't show real hover/focus/pressed behaviour, each interaction state was designed as an explicit pill-button variant in the app palette:</p><div class=cs-btn-states><div class=state-chip><span class="demo-btn default">Pay now</span><span class=state-label>Default</span></div><div class=state-chip><span class="demo-btn ghost">Pay now</span><span class=state-label>Ghost</span></div><div class=state-chip><span class="demo-btn hover">Pay now</span><span class=state-label>Hover</span></div><div class=state-chip><span class="demo-btn focus">Pay now</span><span class=state-label>Focus</span></div><div class=state-chip><span class="demo-btn pressed">Pay now</span><span class=state-label>Pressed</span></div><div class=state-chip><span class="demo-btn disabled">Pay now</span><span class=state-label>Disabled</span></div><div class=state-chip><span class="demo-btn loading">Pay now</span><span class=state-label>Loading</span></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>04</span> Solution</h2><p>A redesigned checkout anchored on three principles drawn directly from the research: <strong>clarity</strong> (transparent totals, calm colors with a clear purpose per color), <strong>recovery</strong> (every error state leads somewhere, never to a dead end), and <strong>accessibility</strong> (WCAG 2.2 AA contrast and a documented keyboard tab order from the start).</p><p>The final payment screen consolidates method selection, a recommendation nudge ("In your previous order, you used COD"), and a single confident primary action — Pay Now.</p><div class=cs-figure><img src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/img/payment-method.png alt="Final payment-method screen showing UPI, card, COD and other options with a Pay Now button"><div class=caption>Final payment-method screen — method selection with contextual recommendation and a single primary action.</div></div></div></section><section class=cs-section><div class=container><h2><span class=num>05</span> Research</h2><p>Research ran across all eight weeks and combined three methods: heuristic teardowns of live e-commerce checkouts (week 1), an accessibility contrast audit against WCAG 2.2 AA (week 5), and a structured A/B test proposal for guest-checkout visibility (week 7).</p><div class=cs-split><div><h3>Heuristic teardowns</h3><p>Studied navigation menus, search, filters, buttons, forms, product cards, carts, and checkout screens to identify usability issues. Learning that <em>every element has a reason for its placement</em> — nothing is random — reshaped how I approached hierarchy and information scent.</p></div><div><h3>Pricing transparency</h3><p>Investigated how MRP, taxes, shipping, discounts, and platform fees combine — and the roles of sellers, brands, and platforms. Confirmed that perceived fairness of the final price outweighs speed and polish.</p></div></div><h3 style=margin-top:1.5rem>A/B test proposal — guest checkout visibility</h3><div class=cs-callout><strong>Hypothesis.</strong> Making <em>Continue as Guest</em> more visible and showing a guest-checkout notification during checkout will reduce user confusion, improve user confidence, and increase successful guest-checkout completion.</div><div class=cs-ab-grid><div class="cs-ab-card control"><span class=tag>Version A · Control</span><h3>Current design</h3><ul><li>Continue as Guest appears <em>below</em> the Sign In option.</li><li>No guest-checkout notification is displayed.</li><li>Users proceed without confirmation they're checking out as a guest.</li></ul></div><div class="cs-ab-card variant"><span class=tag>Version B · Variant</span><h3>Improved design</h3><ul><li>Display <strong>Continue as Guest</strong> as the primary action.</li><li>Surface this notification on the Shipping Address screen after Guest Checkout is selected:</li></ul><div class=cs-ab-quote>You are currently checking out as a guest. Sign in at any time to save your details.</div></div></div><h4 style=margin-bottom:.25rem>Metrics</h4><ul class=cs-ab-metrics><li>Time taken to locate <strong>Continue as Guest</strong></li><li>% of users selecting <strong>Continue as Guest</strong></li><li>Number of users asking whether sign-in is required</li><li>% who notice and understand the guest-checkout notification</li><li>Task completion rate</li><li>User confidence during checkout (participant feedback)</li></ul><h4 style=margin-bottom:.25rem>Risks</h4><ul class=cs-ab-risks><li>Returning users may overlook the <strong>Sign In</strong> option.</li><li>Users may ignore the guest-checkout notification.</li><li>A more prominent Guest option may reduce account sign-ins.</li><li>The notification may add visual clutter if too prominent.</li></ul><div class=cs-callout style=border-left-color:#2f855a;background:#f0fdf4><strong style=color:#2f855a>Expected outcome.</strong> Users find the Guest Checkout option more easily, understand an account isn't required, and complete checkout with greater confidence and less confusion.</div></div></section><section class=cs-section><div class=container><h2><span class=num>06</span> User Flow</h2><p>The checkout was mapped as a happy path plus four explicit error branches, because a single linear prototype couldn't represent the real range of outcomes. Designing recovery paths for declined payments, invalid coupons, and shipping errors forced clarity on <em>what happens when things go wrong</em>.</p><div class=cs-flow><span class=cs-step>Cart</span><span class=cs-arrow>→</span>
+<span class=cs-step>Shipping</span><span class=cs-arrow>→</span>
+<span class=cs-step>Payment</span><span class=cs-arrow>→</span>
+<span class=cs-step>Review</span><span class=cs-arrow>→</span>
+<span class=cs-step>Order Success</span></div><div class=cs-flow><span class="cs-step alt">Coupon invalid</span><span class=cs-arrow>→</span>
+<span class="cs-step alt">Shipping error</span><span class=cs-arrow>→</span>
+<span class="cs-step alt">Payment declined</span><span class=cs-arrow>→</span>
+<span class="cs-step alt">Card retry</span></div><p>Each branch was built as its own prototype flow so reviewers could experience the recovery journey in isolation, rather than relying on a single happy-path demo.</p></div></section><section class=cs-section><div class=container><h2><span class=num>07</span> Information Architecture</h2><p>Because the checkout couldn't be one linear prototype, it was architected as a root with four independent flows. Each flow owns a specific slice of the journey — the happy path end-to-end, plus three error/recovery branches — so every scenario can be reviewed in isolation.</p><pre class=cs-ia-tree><span class=root>Checkout</span>
 │
 ├── Flow 01 — Happy Path
 ├── Flow 02 — Payment Method
 ├── Flow 03 — Shipping Validation
-└── Flow 04 — Coupon Validation</pre>
-      <div class="cs-ia-flows">
-        <div class="cs-ia-flow">
-          <div class="head"><span class="num">1</span><h3>Happy Path</h3></div>
-<pre>Cart
-  <span class="br">↓</span>
+└── Flow 04 — Coupon Validation</pre><div class=cs-ia-flows><div class=cs-ia-flow><div class=head><span class=num>1</span><h3>Happy Path</h3></div><pre>Cart
+  <span class=br>↓</span>
 Login
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Shipping Address
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Shipping Method
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Payment Method
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Credit Card
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Card Details
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Review Order
-  <span class="br">↓</span>
+  <span class=br>↓</span>
 Authorizing
-  <span class="br">↓</span>
-<span class="ok">Success</span>
-  <span class="br">↓</span>
+  <span class=br>↓</span>
+<span class=ok>Success</span>
+  <span class=br>↓</span>
 Order Details
-  <span class="br">↓</span>
-Track Order</pre>
-        </div>
-        <div class="cs-ia-flow">
-          <div class="head"><span class="num">2</span><h3>Payment Method</h3></div>
-<pre>Payment Method
-      <span class="br">│</span>
-      <span class="br">├────</span> Saved Card
-      <span class="br">│</span>          <span class="br">│</span>
-      <span class="br">│</span>          <span class="br">▼</span>
-      <span class="br">│</span>      <span class="ok">Payment Success</span>
-      <span class="br">│</span>
-      <span class="br">└────</span> Add New Card
-                  <span class="br">│</span>
-                  <span class="br">▼</span>
+  <span class=br>↓</span>
+Track Order</pre></div><div class=cs-ia-flow><div class=head><span class=num>2</span><h3>Payment Method</h3></div><pre>Payment Method
+      <span class=br>│</span>
+      <span class=br>├────</span> Saved Card
+      <span class=br>│</span>          <span class=br>│</span>
+      <span class=br>│</span>          <span class=br>▼</span>
+      <span class=br>│</span>      <span class=ok>Payment Success</span>
+      <span class=br>│</span>
+      <span class=br>└────</span> Add New Card
+                  <span class=br>│</span>
+                  <span class=br>▼</span>
             Card Details
-                  <span class="br">│</span>
-          <span class="br">┌───────┴────────┐</span>
-          <span class="br">▼</span>                <span class="br">▼</span>
-      <span class="err">Validation</span>       Continue</pre>
-        </div>
-        <div class="cs-ia-flow">
-          <div class="head"><span class="num">3</span><h3>Shipping Validation</h3></div>
-<pre>Shipping Address
-        <span class="br">│</span>
-        <span class="br">▼</span>
+                  <span class=br>│</span>
+          <span class=br>┌───────┴────────┐</span>
+          <span class=br>▼</span>                <span class=br>▼</span>
+      <span class=err>Validation</span>       Continue</pre></div><div class=cs-ia-flow><div class=head><span class=num>3</span><h3>Shipping Validation</h3></div><pre>Shipping Address
+        <span class=br>│</span>
+        <span class=br>▼</span>
 Address Validation
-        <span class="br">│</span>
-   <span class="br">┌────┴────┐</span>
-   <span class="br">▼</span>         <span class="br">▼</span>
-<span class="ok">Valid</span>    <span class="err">Invalid</span>
-   <span class="br">│</span>         <span class="br">│</span>
-   <span class="br">▼</span>         <span class="br">▼</span>
+        <span class=br>│</span>
+   <span class=br>┌────┴────┐</span>
+   <span class=br>▼</span>         <span class=br>▼</span>
+<span class=ok>Valid</span>    <span class=err>Invalid</span>
+   <span class=br>│</span>         <span class=br>│</span>
+   <span class=br>▼</span>         <span class=br>▼</span>
 Shipping  Edit Address
-Method</pre>
-        </div>
-        <div class="cs-ia-flow">
-          <div class="head"><span class="num">4</span><h3>Coupon Validation</h3></div>
-<pre>Cart
- <span class="br">│</span>
- <span class="br">▼</span>
+Method</pre></div><div class=cs-ia-flow><div class=head><span class=num>4</span><h3>Coupon Validation</h3></div><pre>Cart
+ <span class=br>│</span>
+ <span class=br>▼</span>
 Coupon List
- <span class="br">│</span>
- <span class="br">▼</span>
+ <span class=br>│</span>
+ <span class=br>▼</span>
 Apply Coupon
- <span class="br">│</span>
-<span class="br">┌───────────────┐</span>
-<span class="br">▼</span>               <span class="br">▼</span>
-<span class="ok">Success</span>      <span class="err">Invalid</span>
-<span class="br">│</span>               <span class="br">│</span>
-<span class="br">▼</span>               <span class="br">▼</span>
+ <span class=br>│</span>
+<span class=br>┌───────────────┐</span>
+<span class=br>▼</span>               <span class=br>▼</span>
+<span class=ok>Success</span>      <span class=err>Invalid</span>
+<span class=br>│</span>               <span class=br>│</span>
+<span class=br>▼</span>               <span class=br>▼</span>
 Discount    Replace Coupon
-Applied          <span class="br">│</span>
-<span class="br">└────────────────┘</span></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">08</span> Wireframes</h2>
-      <p>Early structure focused on what information belongs on each screen and in what order — not visuals. The cart wireframe alone surfaced several structural decisions that carried into hi-fi: collapse the cart summary, reduce nav icons from 5 to 4, and make the Proceed button large with a "remaining steps" hint.</p>
-      <div class="cs-split">
-        <div>
-          <h3>Key wireframe decisions</h3>
-          <ul>
-            <li>Progress stepper visible on every step</li>
-            <li>Order summary collapsible, not always-expanded</li>
-            <li>Out-of-stock items grouped and visually muted</li>
-            <li>Primary action fixed and large at the bottom</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Refinements before hi-fi</h3>
-          <ul>
-            <li>Removed Wishlist icon from bottom nav (5 → 4)</li>
-            <li>Shrunk delete icon 15px → 13px</li>
-            <li>Dimmed "Save for Later" to 70% opacity, 16px → 14px</li>
-            <li>Applied coupon: gradient fill on "Applied" badge</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">09</span> Design System</h2>
-      <p>Before hi-fi, I defined the design tokens that would govern the whole flow — color, typography, spacing, and radius — captured as a structured <code>tokens.json</code> managed in VS Code and version-controlled on GitHub. The palette was chosen for brand identity, accessibility, visual hierarchy, and eye comfort (the prior design had too many colors and caused eye strain).</p>
-      <p><a href="http://localhost:1313/ecommerce-checkout-flow/design-system/">→ See the full visual design system</a></p>
-      <div class="cs-split">
-        <div>
-          <h3>Color tokens</h3>
-          <ul>
-            <li>Primary <code>#091E48</code> — brand navy</li>
-            <li>Secondary <code>#185277</code> — supporting navy</li>
-            <li>Tertiary <code>#56C8C8</code> — teal accent, focus rings</li>
-            <li>Error <code>#FF3333</code> · Success <code>#2F855A</code></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Spacing & radius tokens</h3>
-          <ul>
-            <li>Spacing: 4 / 8 / 12 / 16 / 24 px</li>
-            <li>Radius: 4px (small) / 8px (large)</li>
-            <li>Type pairing: Roboto (headings) + Inter (body)</li>
-            <li>Each color given an explicit, named purpose</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">10</span> High-Fidelity UI</h2>
-      <p>Hi-fi screens applied the token system to every component — buttons, text fields (with all six states), cards, progress stepper, and badges. Beyond cosmetics, the hi-fi pass resolved the interaction details Figma couldn't simulate: documented tab order, validation timing, and the exact gradient on success/confirmation surfaces.</p>
-      <div class="cs-figure">
-        <img src="http://localhost:1313/ecommerce-checkout-flow/img/happy-path.png" alt="Happy-path checkout screens">
-        <div class="caption">Happy-path flow — cart through order success, applying the token system end to end.</div>
-      </div>
-      <div class="cs-split">
-        <div class="cs-figure">
-          <img src="http://localhost:1313/ecommerce-checkout-flow/img/coupon-error.png" alt="Coupon error screen">
-          <div class="caption">Coupon error — inline validation with a clear recovery path.</div>
-        </div>
-        <div class="cs-figure">
-          <img src="http://localhost:1313/ecommerce-checkout-flow/img/shipping-validation.png" alt="Shipping validation error screen">
-          <div class="caption">Shipping validation — error messaging tied to a specific field.</div>
-        </div>
-      </div>
-      <div class="cs-figure">
-        <img src="http://localhost:1313/ecommerce-checkout-flow/img/payment-method.png" alt="Final payment-method screen">
-        <div class="caption">Payment method — method selection with contextual recommendation and a single primary action.</div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">11</span> Prototype</h2>
-      <p>The interactive prototype was split into four independent flows — Happy Path, Coupon Edge Cases, Payment Failure, and Shipping Validation — because Figma's single-interaction model couldn't branch a Pay Now button to either success or failure based on input. Interactive component variants plus Smart Animate carried the micro-interactions that real text entry couldn't.</p>
-      <div class="cs-callout">
-        <strong>Trade-off.</strong> Four separate flows are less elegant than one continuous demo, but they let each error-recovery journey be experienced clearly and on its own terms — a better test of the design's resilience than a happy-path-only walkthrough.
-      </div>
-      <div class="cs-video-grid">
-        <div class="cs-video">
-          <video controls preload="metadata" poster="/img/happy-path.png">
-            <source src="http://localhost:1313/ecommerce-checkout-flow/video/flow-1-happy-path.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="meta"><span class="num">1</span><span class="name">Happy Path</span></div>
-        </div>
-        <div class="cs-video">
-          <video controls preload="metadata" poster="/img/coupon-error.png">
-            <source src="http://localhost:1313/ecommerce-checkout-flow/video/flow-2-coupon.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="meta"><span class="num">2</span><span class="name">Coupon Edge Case</span></div>
-        </div>
-        <div class="cs-video">
-          <video controls preload="metadata" poster="/img/payment-method.png">
-            <source src="http://localhost:1313/ecommerce-checkout-flow/video/flow-3-payment.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="meta"><span class="num">3</span><span class="name">Payment Failure &amp; Recovery</span></div>
-        </div>
-        <div class="cs-video">
-          <video controls preload="metadata" poster="/img/shipping-validation.png">
-            <source src="http://localhost:1313/ecommerce-checkout-flow/video/flow-4-shipping.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="meta"><span class="num">4</span><span class="name">Shipping Validation</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">12</span> Testing</h2>
-      <p>Testing had two pillars: an accessibility contrast audit against WCAG 2.2 AA, and documented keyboard focus order for the screens Figma couldn't navigate by keyboard. Both surfaced concrete, fixable issues — not vague "make it better" feedback.</p>
-      <h3>WCAG 2.2 AA contrast audit</h3>
-      <p>Every text/UI pair on the checkout screens was measured against WCAG 2.2 AA (≥ 4.5:1). Of 18 checks, 16 pass and 2 are flagged for review (non-interactive surfaces, exempt under WCAG). The text-field contrast was corrected from a near-miss to a clear pass.</p>
-      <div class="cs-table-wrap">
-        <table class="cs-contrast-table">
-          <thead>
-            <tr>
-              <th>Screen</th>
-              <th>Element</th>
-              <th>Foreground</th>
-              <th>Background</th>
-              <th>Ratio</th>
-              <th>Requirement</th>
-              <th>Result</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Checkout</td><td>Page Title</td><td><span class="swatch-chip" style="background:#000000"></span><span class="fg">#000000</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">21:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Product Name</td><td><span class="swatch-chip" style="background:#295174"></span><span class="fg">#295174</span></td><td><span class="swatch-chip" style="background:#DFF1F2"></span><span class="bg">#DFF1F2</span></td><td class="ratio">7.13:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Body Text</td><td><span class="swatch-chip" style="background:#0E1E45"></span><span class="fg">#0E1E45</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">16.27:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Primary Button Text</td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="fg">#FFFFFF</span></td><td><span class="swatch-chip" style="background:#295174"></span><span class="bg">#295174</span></td><td class="ratio">8.32:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Secondary Button Text</td><td><span class="swatch-chip" style="background:#56617D"></span><span class="fg">#56617D</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">6.17:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Input Border</td><td><span class="swatch-chip" style="background:#244664"></span><span class="fg">#244664</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">9.83:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Error Text</td><td><span class="swatch-chip" style="background:#DC2626"></span><span class="fg">#DC2626</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">4.83:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Success Text</td><td><span class="swatch-chip" style="background:#2D6A4C"></span><span class="fg">#2D6A4C</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">6.4:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Progress Stepper</td><td><span class="swatch-chip" style="background:#295174"></span><span class="fg">#295174</span></td><td><span class="swatch-chip" style="background:#DFF1F2"></span><span class="bg">#DFF1F2</span></td><td class="ratio">7.13:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Disabled Text</td><td><span class="swatch-chip" style="background:#464554"></span><span class="fg">#464554</span></td><td><span class="swatch-chip" style="background:#FFFFFF"></span><span class="bg">#FFFFFF</span></td><td class="ratio">9.37:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Checkout</td><td>Out of stock label</td><td><span class="swatch-chip" style="background:#F1BF41"></span><span class="fg">#F1BF41</span></td><td><span class="swatch-chip" style="background:#FCEEED"></span><span class="bg">#FCEEED</span></td><td class="ratio">1.51:1</td><td class="req">Exempt (non-interactive)</td><td class="review">Review</td></tr>
-            <tr><td>Checkout</td><td>Out of stock label</td><td><span class="swatch-chip" style="background:#9D5E0B"></span><span class="fg">#9D5E0B</span></td><td><span class="swatch-chip" style="background:#FCEEED"></span><span class="bg">#FCEEED</span></td><td class="ratio">4.6:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Coupon</td><td>Coupon code</td><td><span class="swatch-chip" style="background:#0E1E45"></span><span class="fg">#0E1E45</span></td><td><span class="swatch-chip" style="background:#E5F4F5"></span><span class="bg">#E5F4F5</span></td><td class="ratio">14.4:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Coupon</td><td>Icon</td><td><span class="swatch-chip" style="background:#0E1E45"></span><span class="fg">#0E1E45</span></td><td><span class="swatch-chip" style="background:#B6E1E2"></span><span class="bg">#B6E1E2</span></td><td class="ratio">11.51:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Coupon</td><td>Secure Check</td><td><span class="swatch-chip" style="background:#1B1B23"></span><span class="fg">#1B1B23</span></td><td><span class="swatch-chip" style="background:#FEFAFA"></span><span class="bg">#FEFAFA</span></td><td class="ratio">16.51:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Coupon</td><td>Order successful text</td><td><span class="swatch-chip" style="background:#295174"></span><span class="fg">#295174</span></td><td><span class="swatch-chip" style="background:#F0FEFF"></span><span class="bg">#F0FEFF</span></td><td class="ratio">8.05:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-            <tr><td>Invalid Payment</td><td>Card of payment opt.</td><td><span class="swatch-chip" style="background:#EB483E"></span><span class="fg">#EB483E</span></td><td><span class="swatch-chip" style="background:#F9FDFD"></span><span class="bg">#F9FDFD</span></td><td class="ratio">3.7:1</td><td class="req">Exempt (non-interactive)</td><td class="review">Review</td></tr>
-            <tr><td>Payment Declined</td><td>Card tab error</td><td><span class="swatch-chip" style="background:#1B1B23"></span><span class="fg">#1B1B23</span></td><td><span class="swatch-chip" style="background:#FCEFEF"></span><span class="bg">#FCEFEF</span></td><td class="ratio">16.51:1</td><td class="req">≥ 4.5:1</td><td class="pass">✓ Pass</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <h3 style="margin-top:1.5rem">Keyboard tab order</h3>
-      <p>Because Figma can't render real Tab-order focus traversal, the intended focus order for the two payment-error screens was documented as numbered sequences — ready for HTML/CSS/JS implementation under WCAG 2.4.7 (Focus Order).</p>
-      <div class="cs-taborder-grid">
-        <div>
-          <h3>Invalid Payment — 15 steps</h3>
-          <ol class="cs-taborder-list">
-            <li>Back Button</li>
-            <li>Progress Stepper</li>
-            <li>Recommend for You – Payment Method: Cash on Delivery (COD)</li>
-            <li>Payment Method – UPI</li>
-            <li>Credit/Debit Card / ATM Card</li>
-            <li>Card Number Field</li>
-            <li>Expiry Date Field</li>
-            <li>CVV Field</li>
-            <li>Pay Later</li>
-            <li>EMI</li>
-            <li>Net Banking</li>
-            <li>Cash on Delivery (Cash/UPI)</li>
-            <li>Have a Gift Card?</li>
-            <li>Terms &amp; Conditions Checkbox</li>
-            <li>Pay Now Button</li>
-          </ol>
-        </div>
-        <div>
-          <h3>Declined Payment — 5 steps</h3>
-          <ol class="cs-taborder-list">
-            <li>Back Button</li>
-            <li>Terms &amp; Conditions Checkbox</li>
-            <li>Contact Support</li>
-            <li>Try Another Payment Method — navigates the user to alternative payment options such as UPI, Card, Wallet, or Cash on Delivery</li>
-            <li>Retry Transaction</li>
-          </ol>
-          <div class="cs-callout" style="margin-top:1rem">
-            <strong>Why it matters.</strong> Documenting focus order turns "the design is accessible" from a claim into a spec the developer can implement and QA can verify — closing the gap Figma leaves open.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">13</span> Outcomes</h2>
-      <p>The redesigned checkout delivered a calmer, more resilient, and measurably more accessible flow — and a set of documented decisions ready for frontend handoff.</p>
-      <ul class="cs-outcomes">
-        <li>A token-based design system that replaced an eye-straining multi-color palette with a purposeful navy/teal scheme.</li>
-        <li>Four explicit error-recovery flows, so no checkout failure ends in a dead end.</li>
-        <li>Every audited contrast pair passing WCAG 2.2 AA, with documented keyboard tab order for accessibility handoff.</li>
-        <li>A structured A/B test proposal with hypothesis, metrics, and risks ready to run on guest-checkout visibility.</li>
-        <li>Per-screen change log (cart, out-of-stock, payment, success, track-order) capturing every iteration decision.</li>
-      </ul>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container">
-      <h2><span class="num">14</span> What I Learned</h2>
-      <p>Three lessons stood out across the eight weeks — about sequencing, tool limits, and what "done" really means in UX.</p>
-      <div class="cs-learn">
-        <div class="card">
-          <h3>System before screens</h3>
-          <p>If I redid it, I'd build the design system — typography, spacing, reusable components — <em>before</em> the screens. Planning tokens first would have kept the prototype consistent and saved rework.</p>
-        </div>
-        <div class="card">
-          <h3>Plan edge cases early</h3>
-          <p>Mapping all user flows and edge cases up front (coupon, shipping, payment, declined card) makes the prototype far more organized than discovering branches mid-build.</p>
-        </div>
-        <div class="card">
-          <h3>Design for the tool's limits</h3>
-          <p>Figma can't do conditional logic, live inputs, or real keyboard nav. Documenting intent (tab order, state variants, separate flows) is part of the deliverable — not a workaround to hide.</p>
-        </div>
-        <div class="card">
-          <h3>UX is more than UI</h3>
-          <p>I was surprised how much planning sits beyond the screens: usability testing, accessibility checks, spacing consistency, A/B testing, and documenting limitations are all essential to a user-centered result.</p>
-        </div>
-        <div class="card">
-          <h3>Next step: code it</h3>
-          <p>I'd explore converting the Figma prototype into HTML/CSS to implement the interactions Figma can't — keyboard focus, live validation, and true branching.</p>
-        </div>
-        <div class="card">
-          <h3>Colors need a purpose</h3>
-          <p>Each color should have a defined purpose and naming convention. The previous design's eye strain came from too many colors used without intent.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cs-section">
-    <div class="container" style="text-align:center;">
-      <h2>Explore the rest</h2>
-      <p>Browse the design tokens and components behind this case study.</p>
-      <div class="hero-actions" style="justify-content:center;">
-        <a class="button" href="http://localhost:1313/ecommerce-checkout-flow/design-system/">Design System</a>
-        <a class="button secondary" href="http://localhost:1313/ecommerce-checkout-flow/design-guidelines/">Design Guidelines</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-    </div>
-  </article>
-
-    </main>
-    <footer class="site-footer">
-  <div class="container">
-    <p>© 2026 Shrishti</p>
-  </div>
-</footer>
-
-  </body>
-</html>
+Applied          <span class=br>│</span>
+<span class=br>└────────────────┘</span></pre></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>08</span> Wireframes</h2><p>Early structure focused on what information belongs on each screen and in what order — not visuals. The cart wireframe alone surfaced several structural decisions that carried into hi-fi: collapse the cart summary, reduce nav icons from 5 to 4, and make the Proceed button large with a "remaining steps" hint.</p><div class=cs-split><div><h3>Key wireframe decisions</h3><ul><li>Progress stepper visible on every step</li><li>Order summary collapsible, not always-expanded</li><li>Out-of-stock items grouped and visually muted</li><li>Primary action fixed and large at the bottom</li></ul></div><div><h3>Refinements before hi-fi</h3><ul><li>Removed Wishlist icon from bottom nav (5 → 4)</li><li>Shrunk delete icon 15px → 13px</li><li>Dimmed "Save for Later" to 70% opacity, 16px → 14px</li><li>Applied coupon: gradient fill on "Applied" badge</li></ul></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>09</span> Design System</h2><p>Before hi-fi, I defined the design tokens that would govern the whole flow — color, typography, spacing, and radius — captured as a structured <code>tokens.json</code> managed in VS Code and version-controlled on GitHub. The palette was chosen for brand identity, accessibility, visual hierarchy, and eye comfort (the prior design had too many colors and caused eye strain).</p><p><a href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-system/>→ See the full visual design system</a></p><div class=cs-split><div><h3>Color tokens</h3><ul><li>Primary <code>#091E48</code> — brand navy</li><li>Secondary <code>#185277</code> — supporting navy</li><li>Tertiary <code>#56C8C8</code> — teal accent, focus rings</li><li>Error <code>#FF3333</code> · Success <code>#2F855A</code></li></ul></div><div><h3>Spacing & radius tokens</h3><ul><li>Spacing: 4 / 8 / 12 / 16 / 24 px</li><li>Radius: 4px (small) / 8px (large)</li><li>Type pairing: Roboto (headings) + Inter (body)</li><li>Each color given an explicit, named purpose</li></ul></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>10</span> High-Fidelity UI</h2><p>Hi-fi screens applied the token system to every component — buttons, text fields (with all six states), cards, progress stepper, and badges. Beyond cosmetics, the hi-fi pass resolved the interaction details Figma couldn't simulate: documented tab order, validation timing, and the exact gradient on success/confirmation surfaces.</p><div class=cs-figure><img src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/img/happy-path.png alt="Happy-path checkout screens"><div class=caption>Happy-path flow — cart through order success, applying the token system end to end.</div></div><div class=cs-split><div class=cs-figure><img src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/img/coupon-error.png alt="Coupon error screen"><div class=caption>Coupon error — inline validation with a clear recovery path.</div></div><div class=cs-figure><img src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/img/shipping-validation.png alt="Shipping validation error screen"><div class=caption>Shipping validation — error messaging tied to a specific field.</div></div></div><div class=cs-figure><img src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/img/payment-method.png alt="Final payment-method screen"><div class=caption>Payment method — method selection with contextual recommendation and a single primary action.</div></div></div></section><section class=cs-section><div class=container><h2><span class=num>11</span> Prototype</h2><p>The interactive prototype was split into four independent flows — Happy Path, Coupon Edge Cases, Payment Failure, and Shipping Validation — because Figma's single-interaction model couldn't branch a Pay Now button to either success or failure based on input. Interactive component variants plus Smart Animate carried the micro-interactions that real text entry couldn't.</p><div class=cs-callout><strong>Trade-off.</strong> Four separate flows are less elegant than one continuous demo, but they let each error-recovery journey be experienced clearly and on its own terms — a better test of the design's resilience than a happy-path-only walkthrough.</div><div class=cs-video-grid><div class=cs-video><video controls preload=metadata poster=/img/happy-path.png>
+<source src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/video/flow-1-happy-path.mp4 type=video/mp4>Your browser does not support the video tag.</video><div class=meta><span class=num>1</span><span class=name>Happy Path</span></div></div><div class=cs-video><video controls preload=metadata poster=/img/coupon-error.png>
+<source src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/video/flow-2-coupon.mp4 type=video/mp4>Your browser does not support the video tag.</video><div class=meta><span class=num>2</span><span class=name>Coupon Edge Case</span></div></div><div class=cs-video><video controls preload=metadata poster=/img/payment-method.png>
+<source src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/video/flow-3-payment.mp4 type=video/mp4>Your browser does not support the video tag.</video><div class=meta><span class=num>3</span><span class=name>Payment Failure & Recovery</span></div></div><div class=cs-video><video controls preload=metadata poster=/img/shipping-validation.png>
+<source src=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/video/flow-4-shipping.mp4 type=video/mp4>Your browser does not support the video tag.</video><div class=meta><span class=num>4</span><span class=name>Shipping Validation</span></div></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>12</span> Testing</h2><p>Testing had two pillars: an accessibility contrast audit against WCAG 2.2 AA, and documented keyboard focus order for the screens Figma couldn't navigate by keyboard. Both surfaced concrete, fixable issues — not vague "make it better" feedback.</p><h3>WCAG 2.2 AA contrast audit</h3><p>Every text/UI pair on the checkout screens was measured against WCAG 2.2 AA (≥ 4.5:1). Of 18 checks, 16 pass and 2 are flagged for review (non-interactive surfaces, exempt under WCAG). The text-field contrast was corrected from a near-miss to a clear pass.</p><div class=cs-table-wrap><table class=cs-contrast-table><thead><tr><th>Screen</th><th>Element</th><th>Foreground</th><th>Background</th><th>Ratio</th><th>Requirement</th><th>Result</th></tr></thead><tbody><tr><td>Checkout</td><td>Page Title</td><td><span class=swatch-chip style=background:#000></span><span class=fg>#000000</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>21:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Product Name</td><td><span class=swatch-chip style=background:#295174></span><span class=fg>#295174</span></td><td><span class=swatch-chip style=background:#dff1f2></span><span class=bg>#DFF1F2</span></td><td class=ratio>7.13:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Body Text</td><td><span class=swatch-chip style=background:#0e1e45></span><span class=fg>#0E1E45</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>16.27:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Primary Button Text</td><td><span class=swatch-chip style=background:#fff></span><span class=fg>#FFFFFF</span></td><td><span class=swatch-chip style=background:#295174></span><span class=bg>#295174</span></td><td class=ratio>8.32:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Secondary Button Text</td><td><span class=swatch-chip style=background:#56617d></span><span class=fg>#56617D</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>6.17:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Input Border</td><td><span class=swatch-chip style=background:#244664></span><span class=fg>#244664</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>9.83:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Error Text</td><td><span class=swatch-chip style=background:#dc2626></span><span class=fg>#DC2626</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>4.83:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Success Text</td><td><span class=swatch-chip style=background:#2d6a4c></span><span class=fg>#2D6A4C</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>6.4:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Progress Stepper</td><td><span class=swatch-chip style=background:#295174></span><span class=fg>#295174</span></td><td><span class=swatch-chip style=background:#dff1f2></span><span class=bg>#DFF1F2</span></td><td class=ratio>7.13:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Disabled Text</td><td><span class=swatch-chip style=background:#464554></span><span class=fg>#464554</span></td><td><span class=swatch-chip style=background:#fff></span><span class=bg>#FFFFFF</span></td><td class=ratio>9.37:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Checkout</td><td>Out of stock label</td><td><span class=swatch-chip style=background:#f1bf41></span><span class=fg>#F1BF41</span></td><td><span class=swatch-chip style=background:#fceeed></span><span class=bg>#FCEEED</span></td><td class=ratio>1.51:1</td><td class=req>Exempt (non-interactive)</td><td class=review>Review</td></tr><tr><td>Checkout</td><td>Out of stock label</td><td><span class=swatch-chip style=background:#9d5e0b></span><span class=fg>#9D5E0B</span></td><td><span class=swatch-chip style=background:#fceeed></span><span class=bg>#FCEEED</span></td><td class=ratio>4.6:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Coupon</td><td>Coupon code</td><td><span class=swatch-chip style=background:#0e1e45></span><span class=fg>#0E1E45</span></td><td><span class=swatch-chip style=background:#e5f4f5></span><span class=bg>#E5F4F5</span></td><td class=ratio>14.4:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Coupon</td><td>Icon</td><td><span class=swatch-chip style=background:#0e1e45></span><span class=fg>#0E1E45</span></td><td><span class=swatch-chip style=background:#b6e1e2></span><span class=bg>#B6E1E2</span></td><td class=ratio>11.51:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Coupon</td><td>Secure Check</td><td><span class=swatch-chip style=background:#1b1b23></span><span class=fg>#1B1B23</span></td><td><span class=swatch-chip style=background:#fefafa></span><span class=bg>#FEFAFA</span></td><td class=ratio>16.51:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Coupon</td><td>Order successful text</td><td><span class=swatch-chip style=background:#295174></span><span class=fg>#295174</span></td><td><span class=swatch-chip style=background:#f0feff></span><span class=bg>#F0FEFF</span></td><td class=ratio>8.05:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr><tr><td>Invalid Payment</td><td>Card of payment opt.</td><td><span class=swatch-chip style=background:#eb483e></span><span class=fg>#EB483E</span></td><td><span class=swatch-chip style=background:#f9fdfd></span><span class=bg>#F9FDFD</span></td><td class=ratio>3.7:1</td><td class=req>Exempt (non-interactive)</td><td class=review>Review</td></tr><tr><td>Payment Declined</td><td>Card tab error</td><td><span class=swatch-chip style=background:#1b1b23></span><span class=fg>#1B1B23</span></td><td><span class=swatch-chip style=background:#fcefef></span><span class=bg>#FCEFEF</span></td><td class=ratio>16.51:1</td><td class=req>≥ 4.5:1</td><td class=pass>✓ Pass</td></tr></tbody></table></div><h3 style=margin-top:1.5rem>Keyboard tab order</h3><p>Because Figma can't render real Tab-order focus traversal, the intended focus order for the two payment-error screens was documented as numbered sequences — ready for HTML/CSS/JS implementation under WCAG 2.4.7 (Focus Order).</p><div class=cs-taborder-grid><div><h3>Invalid Payment — 15 steps</h3><ol class=cs-taborder-list><li>Back Button</li><li>Progress Stepper</li><li>Recommend for You – Payment Method: Cash on Delivery (COD)</li><li>Payment Method – UPI</li><li>Credit/Debit Card / ATM Card</li><li>Card Number Field</li><li>Expiry Date Field</li><li>CVV Field</li><li>Pay Later</li><li>EMI</li><li>Net Banking</li><li>Cash on Delivery (Cash/UPI)</li><li>Have a Gift Card?</li><li>Terms & Conditions Checkbox</li><li>Pay Now Button</li></ol></div><div><h3>Declined Payment — 5 steps</h3><ol class=cs-taborder-list><li>Back Button</li><li>Terms & Conditions Checkbox</li><li>Contact Support</li><li>Try Another Payment Method — navigates the user to alternative payment options such as UPI, Card, Wallet, or Cash on Delivery</li><li>Retry Transaction</li></ol><div class=cs-callout style=margin-top:1rem><strong>Why it matters.</strong> Documenting focus order turns "the design is accessible" from a claim into a spec the developer can implement and QA can verify — closing the gap Figma leaves open.</div></div></div></div></section><section class=cs-section><div class=container><h2><span class=num>13</span> Outcomes</h2><p>The redesigned checkout delivered a calmer, more resilient, and measurably more accessible flow — and a set of documented decisions ready for frontend handoff.</p><ul class=cs-outcomes><li>A token-based design system that replaced an eye-straining multi-color palette with a purposeful navy/teal scheme.</li><li>Four explicit error-recovery flows, so no checkout failure ends in a dead end.</li><li>Every audited contrast pair passing WCAG 2.2 AA, with documented keyboard tab order for accessibility handoff.</li><li>A structured A/B test proposal with hypothesis, metrics, and risks ready to run on guest-checkout visibility.</li><li>Per-screen change log (cart, out-of-stock, payment, success, track-order) capturing every iteration decision.</li></ul></div></section><section class=cs-section><div class=container><h2><span class=num>14</span> What I Learned</h2><p>Three lessons stood out across the eight weeks — about sequencing, tool limits, and what "done" really means in UX.</p><div class=cs-learn><div class=card><h3>System before screens</h3><p>If I redid it, I'd build the design system — typography, spacing, reusable components — <em>before</em> the screens. Planning tokens first would have kept the prototype consistent and saved rework.</p></div><div class=card><h3>Plan edge cases early</h3><p>Mapping all user flows and edge cases up front (coupon, shipping, payment, declined card) makes the prototype far more organized than discovering branches mid-build.</p></div><div class=card><h3>Design for the tool's limits</h3><p>Figma can't do conditional logic, live inputs, or real keyboard nav. Documenting intent (tab order, state variants, separate flows) is part of the deliverable — not a workaround to hide.</p></div><div class=card><h3>UX is more than UI</h3><p>I was surprised how much planning sits beyond the screens: usability testing, accessibility checks, spacing consistency, A/B testing, and documenting limitations are all essential to a user-centered result.</p></div><div class=card><h3>Next step: code it</h3><p>I'd explore converting the Figma prototype into HTML/CSS to implement the interactions Figma can't — keyboard focus, live validation, and true branching.</p></div><div class=card><h3>Colors need a purpose</h3><p>Each color should have a defined purpose and naming convention. The previous design's eye strain came from too many colors used without intent.</p></div></div></div></section><section class=cs-section><div class=container style=text-align:center><h2>Explore the rest</h2><p>Browse the design tokens and components behind this case study.</p><div class=hero-actions style=justify-content:center><a class=button href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-system/>Design System</a>
+<a class="button secondary" href=https://imshrishtisahay-bit.github.io/ecommerce-checkout-flow/design-guidelines/>Design Guidelines</a></div></div></section></div></div></article></main><footer class=site-footer><div class=container><p>© 2026 Shrishti</p></div></footer></body></html>
