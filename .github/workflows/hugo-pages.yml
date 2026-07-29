@@ -20,7 +20,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: latest
           extended: true
 
       - name: Build site
@@ -39,7 +39,4 @@ jobs:
           external_repository: imshrishtisahay-bit/shrishti22.github.io
           publish_branch: main
           publish_dir: process/week-8/capstone/public
-          keep_files: false
           force_orphan: true
-          user_name: GitHub Actions
-          user_email: actions@github.com
